@@ -1,5 +1,12 @@
 
 
+https://quickstarts.snowflake.com/guide/data_engineering_with_apache_airflow_ja/index.html?index=..%2F..index#2
+
+
+> 最後のステップは、db_utilsのdbtモジュールをインストールすることです。dbtディレクトリから次を実行します。
+> dbt deps
+
+
 console output:
 ```
 dbt deps
@@ -24,3 +31,17 @@ models:
           materialized: view
 seed-paths: ["data"]   
 ```
+
+
+> ここで、macrosフォルダの下にcustom_demo_macros.sqlというファイルを作成し
+
+> 関連するモジュールがdbt_modulesフォルダにインストールされていることがわかります。
+> ここまでで、次のようなフォルダ構造になります。
+
+![](pic/2024-05-08-09-44-04.png)
+
+note: `custom_demo_macros.sql`か`macro.sql`のどちらのファイル名にするか
+
+fix: `custom_demo_macros.sql`に変更
+画像修正
+![](pic/2024-05-08-09-41-11.png)
