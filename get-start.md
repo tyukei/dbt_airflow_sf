@@ -203,3 +203,109 @@ seed-paths: ["data"]
 ツリーレポジトリは以下のようになります。
 ![](pic/2024-05-08-09-41-11.png)
 
+# dbtでのCSVデータファイルの作成
+
+csvを作成します。
+```bookings_1.csv
+id,booking_reference,hotel,booking_date,cost
+1,232323231,Pan Pacific,2021-03-19,100
+1,232323232,Fullerton,2021-03-20,200
+1,232323233,Fullerton,2021-04-20,300
+1,232323234,Jackson Square,2021-03-21,400
+1,232323235,Mayflower,2021-06-20,500
+1,232323236,Suncity,2021-03-19,600
+1,232323237,Fullerton,2021-08-20,700
+```
+
+```bookings_2.csv
+id,booking_reference,hotel,booking_date,cost
+2,332323231,Fullerton,2021-03-19,100
+2,332323232,Jackson Square,2021-03-20,300
+2,332323233,Suncity,2021-03-20,300
+2,332323234,Jackson Square,2021-03-21,300
+2,332323235,Fullerton,2021-06-20,300
+2,332323236,Suncity,2021-03-19,300
+2,332323237,Berkly,2021-05-20,200
+```
+
+```customers.csv
+id,first_name,last_name,birthdate,membership_no
+1,jim,jone,1989-03-19,12334
+2,adrian,lee,1990-03-10,12323
+```
+
+![](pic/2024-05-08-09-51-00.png)
+
+
+# modelsフォルダへのdbtモデルの作成
+
+```
+mkdir models/analysis
+mkdir models/transform
+vi models/analysis/hotel_count_by_day.sql
+vi models/analysis/thirty_day_avg_cost.sql
+vi models/transform/combined_bookings.sql
+vi models/transform/customer.sql
+vi models/transform/prepped_data.sql
+```
+
+
+
+```combined_bookings.sql
+{{ dbt_utils.union_relations(
+    relations=[ref('bookings_1'), ref('bookings_2')]
+) }}
+```
+
+```customer.sql
+SELECT ID 
+    , FIRST_NAME
+    , LAST_NAME
+    , birthdate
+FROM {{ ref('customers') }}
+```
+
+
+```prepped_data.sql
+SELECT A.ID 
+    , FIRST_NAME
+    , LAST_NAME
+    , birthdate
+    , BOOKING_REFERENCE
+    , HOTEL
+    , BOOKING_DATE
+    , COST
+FROM {{ref('customer')}}  A
+JOIN {{ref('combined_bookings')}} B
+on A.ID = B.ID
+```
+
+
+```hotel_count_by_day.sql
+SELECT
+  BOOKING_DATE,
+  HOTEL,
+  COUNT(ID) as count_bookings
+FROM {{ ref('prepped_data') }}
+GROUP BY
+  BOOKING_DATE,
+  HOTEL
+```
+
+
+```thirty_day_avg_cost.sql
+SELECT
+  BOOKING_DATE,
+  HOTEL,
+  COST,
+  AVG(COST) OVER (
+    ORDER BY BOOKING_DATE ROWS BETWEEN 29 PRECEDING AND CURRENT ROW
+  ) as "30_DAY_AVG_COST",
+  COST -   AVG(COST) OVER (
+    ORDER BY BOOKING_DATE ROWS BETWEEN 29 PRECEDING AND CURRENT ROW
+  ) as "DIFF_BTW_ACTUAL_AVG"
+FROM {{ ref('prepped_data') }}
+```
+
+
+![](pic/2024-05-08-19-15-22.png)
