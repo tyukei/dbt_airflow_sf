@@ -432,3 +432,45 @@ http://localhost:8080/
 ユーザ名: airflow
 パスワード: airflow
 ```
+
+Admin > Variables > Createをクリックし、以下の変数を追加します。
+
+![](pic/2024-05-11-00-56-20.png)
+
+
++ボタンより以下の変数を追加します。
+
+```
+dbt_account: xxxx
+dbt_user: xxxx
+dbt_password: xxxx
+dbt_database: xxxx_DB
+dbt_warehouse: xxxx_WH
+dbt_schema: AIRFLOW_DBT
+```
+
+![](pic/2024-05-11-00-57-25.png)
+
+![](pic/2024-05-11-00-58-33.png)
+
+
+右端の１、２を有効にし左端の再生ボタンをクリックします。
+
+![](pic/2024-05-11-00-59-00.png)
+
+![](pic/2024-05-11-00-59-23.png)
+
+
+successが表示されたら、成功です
+
+また、snowflakeにアクセスすると、以下のようにテーブルが作成されていることが確認できます。
+
+![](pic/2024-05-11-01-00-09.png)
+
+![](pic/2024-05-11-01-04-11.png)
+
+
+
+![](pic/2024-05-11-01-10-23.png)
+
+![](pic/2024-05-11-01-11-24.png)

@@ -675,3 +675,796 @@ COMMIT
 [0m15:49:22.407046 [debug] [MainThread]: Command `dbt seed` succeeded at 15:49:22.406920 after 9.43 seconds
 [0m15:49:22.407637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff99d4b260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff99d04a40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7a94e870>]}
 [0m15:49:22.408260 [debug] [MainThread]: Flushing usage events
+[0m16:05:14.711888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9a813290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9ba6ac00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9ade38c0>]}
+
+
+============================== 16:05:14.716750 | 7b2b44d8-db18-4f9a-97f4-a4a6a7aeb687 ==============================
+[0m16:05:14.716750 [info ] [MainThread]: Running with dbt=1.7.14
+[0m16:05:14.717243 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/dbt/logs', 'profiles_dir': '.', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt seed --profiles-dir .', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:05:15.152926 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7b2b44d8-db18-4f9a-97f4-a4a6a7aeb687', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7b3c1eb0>]}
+[0m16:05:15.179119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7b2b44d8-db18-4f9a-97f4-a4a6a7aeb687', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9a710290>]}
+[0m16:05:15.179731 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m16:05:15.188839 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m16:05:15.196811 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m16:05:15.197309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '7b2b44d8-db18-4f9a-97f4-a4a6a7aeb687', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7b21d880>]}
+[0m16:05:15.930518 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.exam1.customer' (models/transform/customer.sql) depends on a node named 'customers' which was not found
+[0m16:05:15.931505 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 1.2392805, "process_user_time": 2.93352, "process_kernel_time": 0.193008, "process_mem_max_rss": "210916", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m16:05:15.932009 [debug] [MainThread]: Command `dbt seed` failed at 16:05:15.931908 after 1.24 seconds
+[0m16:05:15.932406 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9abb2b70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7b098a40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9f2574a0>]}
+[0m16:05:15.932843 [debug] [MainThread]: Flushing usage events
+[0m16:06:02.087970 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff83cd0b60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff86124380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff83cd0050>]}
+
+
+============================== 16:06:02.092611 | c0f26312-9274-4a19-9506-fd3d882f1744 ==============================
+[0m16:06:02.092611 [info ] [MainThread]: Running with dbt=1.7.14
+[0m16:06:02.093309 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/dbt/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt seed --profiles-dir .', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:06:02.514296 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c0f26312-9274-4a19-9506-fd3d882f1744', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6f9f8620>]}
+[0m16:06:02.540855 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c0f26312-9274-4a19-9506-fd3d882f1744', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff68bca240>]}
+[0m16:06:02.541463 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m16:06:02.550215 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m16:06:02.588578 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:06:02.588995 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:06:02.589607 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.my_new_project.analysis
+- models.my_new_project.transform
+[0m16:06:02.592973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c0f26312-9274-4a19-9506-fd3d882f1744', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6898f170>]}
+[0m16:06:02.603338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c0f26312-9274-4a19-9506-fd3d882f1744', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff688690d0>]}
+[0m16:06:02.603787 [info ] [MainThread]: Found 5 models, 3 seeds, 0 sources, 0 exposures, 0 metrics, 546 macros, 0 groups, 0 semantic models
+[0m16:06:02.604270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c0f26312-9274-4a19-9506-fd3d882f1744', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff845825a0>]}
+[0m16:06:02.605355 [info ] [MainThread]: 
+[0m16:06:02.606022 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:06:02.607423 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_KEITA_NAKATA_DB'
+[0m16:06:02.615367 [debug] [ThreadPool]: Using snowflake connection "list_KEITA_NAKATA_DB"
+[0m16:06:02.615824 [debug] [ThreadPool]: On list_KEITA_NAKATA_DB: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "connection_name": "list_KEITA_NAKATA_DB"} */
+show terse schemas in database KEITA_NAKATA_DB
+    limit 10000
+[0m16:06:02.616186 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:06:03.723559 [debug] [ThreadPool]: SQL status: SUCCESS 12 in 1.0 seconds
+[0m16:06:03.729587 [debug] [ThreadPool]: On list_KEITA_NAKATA_DB: Close
+[0m16:06:03.968824 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_KEITA_NAKATA_DB, now list_KEITA_NAKATA_DB_AIRFLOW_DBT)
+[0m16:06:03.987355 [debug] [ThreadPool]: Using snowflake connection "list_KEITA_NAKATA_DB_AIRFLOW_DBT"
+[0m16:06:03.988978 [debug] [ThreadPool]: On list_KEITA_NAKATA_DB_AIRFLOW_DBT: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "connection_name": "list_KEITA_NAKATA_DB_AIRFLOW_DBT"} */
+show terse objects in KEITA_NAKATA_DB.AIRFLOW_DBT limit 10000
+[0m16:06:03.990031 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:06:04.647821 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m16:06:04.652388 [debug] [ThreadPool]: On list_KEITA_NAKATA_DB_AIRFLOW_DBT: Close
+[0m16:06:05.030213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c0f26312-9274-4a19-9506-fd3d882f1744', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff685c91c0>]}
+[0m16:06:05.032655 [info ] [MainThread]: Concurrency: 200 threads (target='dev')
+[0m16:06:05.033651 [info ] [MainThread]: 
+[0m16:06:05.098090 [debug] [Thread-1 (]: Began running node seed.exam1.bookings_1
+[0m16:06:05.098783 [debug] [Thread-2 (]: Began running node seed.exam1.bookings_2
+[0m16:06:05.099161 [debug] [Thread-3 (]: Began running node seed.exam1.customers
+[0m16:06:05.099869 [info ] [Thread-1 (]: 1 of 3 START seed file AIRFLOW_DBT.bookings_1 .................................. [RUN]
+[0m16:06:05.100923 [info ] [Thread-2 (]: 2 of 3 START seed file AIRFLOW_DBT.bookings_2 .................................. [RUN]
+[0m16:06:05.101649 [info ] [Thread-3 (]: 3 of 3 START seed file AIRFLOW_DBT.customers ................................... [RUN]
+[0m16:06:05.102514 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_KEITA_NAKATA_DB_AIRFLOW_DBT, now seed.exam1.bookings_1)
+[0m16:06:05.103478 [debug] [Thread-2 (]: Acquiring new snowflake connection 'seed.exam1.bookings_2'
+[0m16:06:05.105548 [debug] [Thread-3 (]: Acquiring new snowflake connection 'seed.exam1.customers'
+[0m16:06:05.106544 [debug] [Thread-1 (]: Began compiling node seed.exam1.bookings_1
+[0m16:06:05.107080 [debug] [Thread-2 (]: Began compiling node seed.exam1.bookings_2
+[0m16:06:05.107481 [debug] [Thread-3 (]: Began compiling node seed.exam1.customers
+[0m16:06:05.107953 [debug] [Thread-1 (]: Timing info for seed.exam1.bookings_1 (compile): 16:06:05.107803 => 16:06:05.107809
+[0m16:06:05.108398 [debug] [Thread-2 (]: Timing info for seed.exam1.bookings_2 (compile): 16:06:05.108268 => 16:06:05.108271
+[0m16:06:05.108827 [debug] [Thread-3 (]: Timing info for seed.exam1.customers (compile): 16:06:05.108657 => 16:06:05.108659
+[0m16:06:05.109247 [debug] [Thread-1 (]: Began executing node seed.exam1.bookings_1
+[0m16:06:05.109632 [debug] [Thread-2 (]: Began executing node seed.exam1.bookings_2
+[0m16:06:05.109971 [debug] [Thread-3 (]: Began executing node seed.exam1.customers
+[0m16:06:05.115518 [debug] [Thread-1 (]: Using snowflake connection "seed.exam1.bookings_1"
+[0m16:06:05.117492 [debug] [Thread-2 (]: Using snowflake connection "seed.exam1.bookings_2"
+[0m16:06:05.119217 [debug] [Thread-3 (]: Using snowflake connection "seed.exam1.customers"
+[0m16:06:05.119649 [debug] [Thread-1 (]: On seed.exam1.bookings_1: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_1"} */
+show parameters like 'query_tag' in session
+[0m16:06:05.120057 [debug] [Thread-2 (]: On seed.exam1.bookings_2: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_2"} */
+show parameters like 'query_tag' in session
+[0m16:06:05.120394 [debug] [Thread-3 (]: On seed.exam1.customers: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.customers"} */
+show parameters like 'query_tag' in session
+[0m16:06:05.120780 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:06:05.121147 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:06:05.121527 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m16:06:05.793612 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:06:05.797820 [debug] [Thread-1 (]: Setting query_tag to 'bookings_1'. Will reset to '' after materialization.
+[0m16:06:05.800025 [debug] [Thread-1 (]: Using snowflake connection "seed.exam1.bookings_1"
+[0m16:06:05.801219 [debug] [Thread-1 (]: On seed.exam1.bookings_1: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_1"} */
+alter session set query_tag = 'bookings_1'
+[0m16:06:05.852595 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:06:05.856043 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:06:05.859845 [debug] [Thread-3 (]: Setting query_tag to 'customers'. Will reset to '' after materialization.
+[0m16:06:05.862598 [debug] [Thread-2 (]: Setting query_tag to 'bookings_2'. Will reset to '' after materialization.
+[0m16:06:05.864996 [debug] [Thread-3 (]: Using snowflake connection "seed.exam1.customers"
+[0m16:06:05.867175 [debug] [Thread-2 (]: Using snowflake connection "seed.exam1.bookings_2"
+[0m16:06:05.868497 [debug] [Thread-3 (]: On seed.exam1.customers: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.customers"} */
+alter session set query_tag = 'customers'
+[0m16:06:05.869642 [debug] [Thread-2 (]: On seed.exam1.bookings_2: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_2"} */
+alter session set query_tag = 'bookings_2'
+[0m16:06:05.971892 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:06:06.021171 [debug] [Thread-1 (]: Using snowflake connection "seed.exam1.bookings_1"
+[0m16:06:06.022070 [debug] [Thread-1 (]: On seed.exam1.bookings_1: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_1"} */
+BEGIN
+[0m16:06:06.040240 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:06:06.047040 [debug] [Thread-2 (]: Using snowflake connection "seed.exam1.bookings_2"
+[0m16:06:06.047746 [debug] [Thread-2 (]: On seed.exam1.bookings_2: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_2"} */
+BEGIN
+[0m16:06:06.063088 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:06:06.069193 [debug] [Thread-3 (]: Using snowflake connection "seed.exam1.customers"
+[0m16:06:06.069945 [debug] [Thread-3 (]: On seed.exam1.customers: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.customers"} */
+BEGIN
+[0m16:06:06.241429 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:06:06.243654 [debug] [Thread-1 (]: Using snowflake connection "seed.exam1.bookings_1"
+[0m16:06:06.245709 [debug] [Thread-1 (]: On seed.exam1.bookings_1: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_1"} */
+truncate table "KEITA_NAKATA_DB"."AIRFLOW_DBT"."BOOKINGS_1"
+  ;
+[0m16:06:06.266442 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:06:06.268592 [debug] [Thread-2 (]: Using snowflake connection "seed.exam1.bookings_2"
+[0m16:06:06.276556 [debug] [Thread-2 (]: On seed.exam1.bookings_2: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_2"} */
+truncate table "KEITA_NAKATA_DB"."AIRFLOW_DBT"."BOOKINGS_2"
+  ;
+[0m16:06:06.285260 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:06:06.287147 [debug] [Thread-3 (]: Using snowflake connection "seed.exam1.customers"
+[0m16:06:06.288381 [debug] [Thread-3 (]: On seed.exam1.customers: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.customers"} */
+truncate table "KEITA_NAKATA_DB"."AIRFLOW_DBT"."CUSTOMERS"
+  ;
+[0m16:06:06.692647 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:06:06.695078 [debug] [Thread-1 (]: Using snowflake connection "seed.exam1.bookings_1"
+[0m16:06:06.696055 [debug] [Thread-1 (]: On seed.exam1.bookings_1: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_1"} */
+COMMIT
+[0m16:06:06.712315 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:06:06.714181 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:06:06.715513 [debug] [Thread-3 (]: Using snowflake connection "seed.exam1.customers"
+[0m16:06:06.717087 [debug] [Thread-2 (]: Using snowflake connection "seed.exam1.bookings_2"
+[0m16:06:06.718611 [debug] [Thread-3 (]: On seed.exam1.customers: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.customers"} */
+COMMIT
+[0m16:06:06.720180 [debug] [Thread-2 (]: On seed.exam1.bookings_2: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_2"} */
+COMMIT
+[0m16:06:07.211316 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:06:07.214569 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:06:07.217939 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:06:07.239442 [debug] [Thread-2 (]: Using snowflake connection "seed.exam1.bookings_2"
+[0m16:06:07.242892 [debug] [Thread-3 (]: Using snowflake connection "seed.exam1.customers"
+[0m16:06:07.245802 [debug] [Thread-1 (]: Using snowflake connection "seed.exam1.bookings_1"
+[0m16:06:07.246778 [debug] [Thread-2 (]: On seed.exam1.bookings_2: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_2"} */
+BEGIN
+[0m16:06:07.247812 [debug] [Thread-3 (]: On seed.exam1.customers: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.customers"} */
+BEGIN
+[0m16:06:07.248809 [debug] [Thread-1 (]: On seed.exam1.bookings_1: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_1"} */
+BEGIN
+[0m16:06:07.488081 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:06:07.490374 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:06:07.493285 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:06:07.495930 [debug] [Thread-1 (]: Using snowflake connection "seed.exam1.bookings_1"
+[0m16:06:07.498196 [debug] [Thread-3 (]: Using snowflake connection "seed.exam1.customers"
+[0m16:06:07.500335 [debug] [Thread-2 (]: Using snowflake connection "seed.exam1.bookings_2"
+[0m16:06:07.501612 [debug] [Thread-1 (]: On seed.exam1.bookings_1: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_1"} */
+insert into KEITA_NAKATA_DB.AIRFLOW_DBT.bookings_1 (id, booking_reference, hotel, booking_date, cost) values
+            (%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s)...
+[0m16:06:07.502732 [debug] [Thread-3 (]: On seed.exam1.customers: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.customers"} */
+insert into KEITA_NAKATA_DB.AIRFLOW_DBT.customers (id, first_name, last_name, birthdate, membership_no) values
+            (%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s)...
+[0m16:06:07.503850 [debug] [Thread-2 (]: On seed.exam1.bookings_2: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_2"} */
+insert into KEITA_NAKATA_DB.AIRFLOW_DBT.bookings_2 (id, booking_reference, hotel, booking_date, cost) values
+            (%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s)...
+[0m16:06:08.634810 [debug] [Thread-1 (]: SQL status: SUCCESS 7 in 1.0 seconds
+[0m16:06:08.635300 [debug] [Thread-2 (]: SQL status: SUCCESS 7 in 1.0 seconds
+[0m16:06:08.635836 [debug] [Thread-1 (]: Using snowflake connection "seed.exam1.bookings_1"
+[0m16:06:08.636243 [debug] [Thread-2 (]: Using snowflake connection "seed.exam1.bookings_2"
+[0m16:06:08.636591 [debug] [Thread-1 (]: On seed.exam1.bookings_1: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_1"} */
+COMMIT
+[0m16:06:08.636946 [debug] [Thread-2 (]: On seed.exam1.bookings_2: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_2"} */
+COMMIT
+[0m16:06:08.683189 [debug] [Thread-3 (]: SQL status: SUCCESS 2 in 1.0 seconds
+[0m16:06:08.686516 [debug] [Thread-3 (]: Using snowflake connection "seed.exam1.customers"
+[0m16:06:08.687069 [debug] [Thread-3 (]: On seed.exam1.customers: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.customers"} */
+COMMIT
+[0m16:06:09.174845 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:06:09.175778 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:06:09.182086 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.exam1.bookings_1"
+[0m16:06:09.186468 [debug] [Thread-2 (]: Writing runtime SQL for node "seed.exam1.bookings_2"
+[0m16:06:09.213319 [debug] [Thread-2 (]: Timing info for seed.exam1.bookings_2 (execute): 16:06:05.116097 => 16:06:09.213148
+[0m16:06:09.215624 [debug] [Thread-1 (]: Timing info for seed.exam1.bookings_1 (execute): 16:06:05.110289 => 16:06:09.215469
+[0m16:06:09.216164 [debug] [Thread-2 (]: On seed.exam1.bookings_2: Close
+[0m16:06:09.216693 [debug] [Thread-1 (]: On seed.exam1.bookings_1: Close
+[0m16:06:09.307491 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:06:09.309080 [debug] [Thread-3 (]: Writing runtime SQL for node "seed.exam1.customers"
+[0m16:06:09.314480 [debug] [Thread-3 (]: Timing info for seed.exam1.customers (execute): 16:06:05.117844 => 16:06:09.314221
+[0m16:06:09.316584 [debug] [Thread-3 (]: On seed.exam1.customers: Close
+[0m16:06:09.487991 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c0f26312-9274-4a19-9506-fd3d882f1744', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6841d790>]}
+[0m16:06:09.490650 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c0f26312-9274-4a19-9506-fd3d882f1744', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6841d880>]}
+[0m16:06:09.492495 [info ] [Thread-1 (]: 1 of 3 OK loaded seed file AIRFLOW_DBT.bookings_1 .............................. [[32mINSERT 7[0m in 4.39s]
+[0m16:06:09.496908 [info ] [Thread-2 (]: 2 of 3 OK loaded seed file AIRFLOW_DBT.bookings_2 .............................. [[32mINSERT 7[0m in 4.39s]
+[0m16:06:09.499230 [debug] [Thread-1 (]: Finished running node seed.exam1.bookings_1
+[0m16:06:09.500518 [debug] [Thread-2 (]: Finished running node seed.exam1.bookings_2
+[0m16:06:09.558178 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c0f26312-9274-4a19-9506-fd3d882f1744', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff83e87230>]}
+[0m16:06:09.560707 [info ] [Thread-3 (]: 3 of 3 OK loaded seed file AIRFLOW_DBT.customers ............................... [[32mINSERT 2[0m in 4.45s]
+[0m16:06:09.563898 [debug] [Thread-3 (]: Finished running node seed.exam1.customers
+[0m16:06:09.583411 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:06:09.585058 [debug] [MainThread]: Connection 'seed.exam1.bookings_1' was properly closed.
+[0m16:06:09.586257 [debug] [MainThread]: Connection 'seed.exam1.bookings_2' was properly closed.
+[0m16:06:09.587308 [debug] [MainThread]: Connection 'seed.exam1.customers' was properly closed.
+[0m16:06:09.588483 [info ] [MainThread]: 
+[0m16:06:09.589673 [info ] [MainThread]: Finished running 3 seeds in 0 hours 0 minutes and 6.98 seconds (6.98s).
+[0m16:06:09.591628 [debug] [MainThread]: Command end result
+[0m16:06:09.607848 [info ] [MainThread]: 
+[0m16:06:09.608672 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:06:09.609369 [info ] [MainThread]: 
+[0m16:06:09.610103 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m16:06:09.611383 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 7.542887, "process_user_time": 2.968014, "process_kernel_time": 0.224803, "process_mem_max_rss": "243224", "process_out_blocks": "8", "process_in_blocks": "0"}
+[0m16:06:09.612141 [debug] [MainThread]: Command `dbt seed` succeeded at 16:06:09.611993 after 7.54 seconds
+[0m16:06:09.612807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff86124380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff841291c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff866763f0>]}
+[0m16:06:09.613459 [debug] [MainThread]: Flushing usage events
+[0m16:06:27.616725 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8af7dfa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8b41ab10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8b41a870>]}
+
+
+============================== 16:06:27.620913 | 6d6355c5-c8b7-4e5e-89d7-609648eade7e ==============================
+[0m16:06:27.620913 [info ] [MainThread]: Running with dbt=1.7.14
+[0m16:06:27.621396 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/dbt/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run --models transform --profiles-dir .', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:06:27.624235 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'dbt_account'
+[0m16:06:27.624907 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.029089876, "process_user_time": 1.326766, "process_kernel_time": 0.054948, "process_mem_max_rss": "210856", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m16:06:27.625347 [debug] [MainThread]: Command `dbt run` failed at 16:06:27.625264 after 0.03 seconds
+[0m16:06:27.625690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8b5057f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8b4f8fb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8b4fa4b0>]}
+[0m16:06:27.626055 [debug] [MainThread]: Flushing usage events
+[0m16:07:16.042908 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8373df40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff83c41c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff83bdca10>]}
+
+
+============================== 16:07:16.046886 | 99033bb0-ecab-4e6d-b663-aebb6622a9ce ==============================
+[0m16:07:16.046886 [info ] [MainThread]: Running with dbt=1.7.14
+[0m16:07:16.047314 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/dbt/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --models transform --profiles-dir .', 'send_anonymous_usage_stats': 'True'}
+[0m16:07:16.468194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '99033bb0-ecab-4e6d-b663-aebb6622a9ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff68433410>]}
+[0m16:07:16.494140 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '99033bb0-ecab-4e6d-b663-aebb6622a9ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6863a360>]}
+[0m16:07:16.494734 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m16:07:16.502955 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m16:07:16.534215 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:07:16.534579 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:07:16.535104 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.my_new_project.analysis
+- models.my_new_project.transform
+[0m16:07:16.538127 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '99033bb0-ecab-4e6d-b663-aebb6622a9ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff685a0e00>]}
+[0m16:07:16.546026 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '99033bb0-ecab-4e6d-b663-aebb6622a9ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6838c170>]}
+[0m16:07:16.546375 [info ] [MainThread]: Found 5 models, 3 seeds, 0 sources, 0 exposures, 0 metrics, 546 macros, 0 groups, 0 semantic models
+[0m16:07:16.546769 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '99033bb0-ecab-4e6d-b663-aebb6622a9ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6829fbc0>]}
+[0m16:07:16.547688 [info ] [MainThread]: 
+[0m16:07:16.548259 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:07:16.549656 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_KEITA_NAKATA_DB'
+[0m16:07:16.557088 [debug] [ThreadPool]: Using snowflake connection "list_KEITA_NAKATA_DB"
+[0m16:07:16.557475 [debug] [ThreadPool]: On list_KEITA_NAKATA_DB: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "connection_name": "list_KEITA_NAKATA_DB"} */
+show terse schemas in database KEITA_NAKATA_DB
+    limit 10000
+[0m16:07:16.557810 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:07:17.455131 [debug] [ThreadPool]: SQL status: SUCCESS 12 in 1.0 seconds
+[0m16:07:17.461675 [debug] [ThreadPool]: On list_KEITA_NAKATA_DB: Close
+[0m16:07:17.718030 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_KEITA_NAKATA_DB, now list_KEITA_NAKATA_DB_AIRFLOW_DBT)
+[0m16:07:17.737974 [debug] [ThreadPool]: Using snowflake connection "list_KEITA_NAKATA_DB_AIRFLOW_DBT"
+[0m16:07:17.739467 [debug] [ThreadPool]: On list_KEITA_NAKATA_DB_AIRFLOW_DBT: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "connection_name": "list_KEITA_NAKATA_DB_AIRFLOW_DBT"} */
+show terse objects in KEITA_NAKATA_DB.AIRFLOW_DBT limit 10000
+[0m16:07:17.740559 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:07:18.392620 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m16:07:18.399741 [debug] [ThreadPool]: On list_KEITA_NAKATA_DB_AIRFLOW_DBT: Close
+[0m16:07:18.631087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '99033bb0-ecab-4e6d-b663-aebb6622a9ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6ad16690>]}
+[0m16:07:18.633135 [info ] [MainThread]: Concurrency: 200 threads (target='dev')
+[0m16:07:18.634385 [info ] [MainThread]: 
+[0m16:07:18.677924 [debug] [Thread-1 (]: Began running node model.exam1.combined_bookings
+[0m16:07:18.678359 [debug] [Thread-2 (]: Began running node model.exam1.customer
+[0m16:07:18.678981 [info ] [Thread-1 (]: 1 of 3 START sql view model AIRFLOW_DBT.combined_bookings ...................... [RUN]
+[0m16:07:18.679531 [info ] [Thread-2 (]: 2 of 3 START sql view model AIRFLOW_DBT.customer ............................... [RUN]
+[0m16:07:18.680286 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_KEITA_NAKATA_DB_AIRFLOW_DBT, now model.exam1.combined_bookings)
+[0m16:07:18.681023 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.exam1.customer'
+[0m16:07:18.681475 [debug] [Thread-1 (]: Began compiling node model.exam1.combined_bookings
+[0m16:07:18.681918 [debug] [Thread-2 (]: Began compiling node model.exam1.customer
+[0m16:07:18.702140 [debug] [Thread-2 (]: Writing injected SQL for node "model.exam1.customer"
+[0m16:07:18.705346 [debug] [Thread-1 (]: Using snowflake connection "model.exam1.combined_bookings"
+[0m16:07:18.706060 [debug] [Thread-1 (]: On model.exam1.combined_bookings: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.combined_bookings"} */
+describe table KEITA_NAKATA_DB.AIRFLOW_DBT.bookings_1
+[0m16:07:18.706647 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:07:18.709277 [debug] [Thread-2 (]: Timing info for model.exam1.customer (compile): 16:07:18.700743 => 16:07:18.709094
+[0m16:07:18.709719 [debug] [Thread-2 (]: Began executing node model.exam1.customer
+[0m16:07:18.714991 [debug] [Thread-2 (]: Using snowflake connection "model.exam1.customer"
+[0m16:07:18.715499 [debug] [Thread-2 (]: On model.exam1.customer: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.customer"} */
+show parameters like 'query_tag' in session
+[0m16:07:18.715888 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:07:19.335723 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:07:19.342621 [debug] [Thread-2 (]: Setting query_tag to 'customer'. Will reset to '' after materialization.
+[0m16:07:19.345296 [debug] [Thread-2 (]: Using snowflake connection "model.exam1.customer"
+[0m16:07:19.346839 [debug] [Thread-2 (]: On model.exam1.customer: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.customer"} */
+alter session set query_tag = 'customer'
+[0m16:07:19.386670 [debug] [Thread-1 (]: SQL status: SUCCESS 5 in 1.0 seconds
+[0m16:07:19.398980 [debug] [Thread-1 (]: Using snowflake connection "model.exam1.combined_bookings"
+[0m16:07:19.400253 [debug] [Thread-1 (]: On model.exam1.combined_bookings: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.combined_bookings"} */
+describe table KEITA_NAKATA_DB.AIRFLOW_DBT.bookings_2
+[0m16:07:19.513635 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:07:19.544991 [debug] [Thread-2 (]: Writing runtime sql for node "model.exam1.customer"
+[0m16:07:19.548479 [debug] [Thread-2 (]: Using snowflake connection "model.exam1.customer"
+[0m16:07:19.549194 [debug] [Thread-2 (]: On model.exam1.customer: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.customer"} */
+create or replace   view KEITA_NAKATA_DB.AIRFLOW_DBT.customer
+  
+   as (
+    SELECT ID 
+    , FIRST_NAME
+    , LAST_NAME
+    , birthdate
+FROM KEITA_NAKATA_DB.AIRFLOW_DBT.customers
+  );
+[0m16:07:19.580007 [debug] [Thread-1 (]: SQL status: SUCCESS 5 in 0.0 seconds
+[0m16:07:19.588035 [debug] [Thread-1 (]: Writing injected SQL for node "model.exam1.combined_bookings"
+[0m16:07:19.590056 [debug] [Thread-1 (]: Timing info for model.exam1.combined_bookings (compile): 16:07:18.682251 => 16:07:19.589794
+[0m16:07:19.590768 [debug] [Thread-1 (]: Began executing node model.exam1.combined_bookings
+[0m16:07:19.593831 [debug] [Thread-1 (]: Using snowflake connection "model.exam1.combined_bookings"
+[0m16:07:19.594408 [debug] [Thread-1 (]: On model.exam1.combined_bookings: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.combined_bookings"} */
+show parameters like 'query_tag' in session
+[0m16:07:19.751834 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:07:19.756333 [debug] [Thread-1 (]: Setting query_tag to 'combined_bookings'. Will reset to '' after materialization.
+[0m16:07:19.757663 [debug] [Thread-1 (]: Using snowflake connection "model.exam1.combined_bookings"
+[0m16:07:19.758511 [debug] [Thread-1 (]: On model.exam1.combined_bookings: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.combined_bookings"} */
+alter session set query_tag = 'combined_bookings'
+[0m16:07:19.915775 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:07:19.919822 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:07:19.953479 [debug] [Thread-1 (]: Writing runtime sql for node "model.exam1.combined_bookings"
+[0m16:07:19.959531 [debug] [Thread-2 (]: Timing info for model.exam1.customer (execute): 16:07:18.710054 => 16:07:19.959250
+[0m16:07:19.960843 [debug] [Thread-2 (]: On model.exam1.customer: Close
+[0m16:07:19.964818 [debug] [Thread-1 (]: Using snowflake connection "model.exam1.combined_bookings"
+[0m16:07:19.965734 [debug] [Thread-1 (]: On model.exam1.combined_bookings: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.combined_bookings"} */
+create or replace   view KEITA_NAKATA_DB.AIRFLOW_DBT.combined_bookings
+  
+   as (
+    
+    
+
+        (
+            select
+                cast('KEITA_NAKATA_DB.AIRFLOW_DBT.bookings_1' as TEXT) as _dbt_source_relation,
+
+                
+                    cast("ID" as NUMBER(38,0)) as "ID" ,
+                    cast("BOOKING_REFERENCE" as NUMBER(38,0)) as "BOOKING_REFERENCE" ,
+                    cast("HOTEL" as character varying(16777216)) as "HOTEL" ,
+                    cast("BOOKING_DATE" as DATE) as "BOOKING_DATE" ,
+                    cast("COST" as NUMBER(38,0)) as "COST" 
+
+            from KEITA_NAKATA_DB.AIRFLOW_DBT.bookings_1
+
+            
+        )
+
+        union all
+        
+
+        (
+            select
+                cast('KEITA_NAKATA_DB.AIRFLOW_DBT.bookings_2' as TEXT) as _dbt_source_relation,
+
+                
+                    cast("ID" as NUMBER(38,0)) as "ID" ,
+                    cast("BOOKING_REFERENCE" as NUMBER(38,0)) as "BOOKING_REFERENCE" ,
+                    cast("HOTEL" as character varying(16777216)) as "HOTEL" ,
+                    cast("BOOKING_DATE" as DATE) as "BOOKING_DATE" ,
+                    cast("COST" as NUMBER(38,0)) as "COST" 
+
+            from KEITA_NAKATA_DB.AIRFLOW_DBT.bookings_2
+
+            
+        )
+
+        
+  );
+[0m16:07:20.209916 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '99033bb0-ecab-4e6d-b663-aebb6622a9ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff605be300>]}
+[0m16:07:20.213934 [info ] [Thread-2 (]: 2 of 3 OK created sql view model AIRFLOW_DBT.customer .......................... [[32mSUCCESS 1[0m in 1.53s]
+[0m16:07:20.216848 [debug] [Thread-2 (]: Finished running node model.exam1.customer
+[0m16:07:20.317932 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:07:20.327975 [debug] [Thread-1 (]: Timing info for model.exam1.combined_bookings (execute): 16:07:19.591294 => 16:07:20.327295
+[0m16:07:20.330187 [debug] [Thread-1 (]: On model.exam1.combined_bookings: Close
+[0m16:07:20.578382 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '99033bb0-ecab-4e6d-b663-aebb6622a9ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff605bfb90>]}
+[0m16:07:20.582485 [info ] [Thread-1 (]: 1 of 3 OK created sql view model AIRFLOW_DBT.combined_bookings ................. [[32mSUCCESS 1[0m in 1.90s]
+[0m16:07:20.590277 [debug] [Thread-1 (]: Finished running node model.exam1.combined_bookings
+[0m16:07:20.595059 [debug] [Thread-4 (]: Began running node model.exam1.prepped_data
+[0m16:07:20.596868 [info ] [Thread-4 (]: 3 of 3 START sql view model AIRFLOW_DBT.prepped_data ........................... [RUN]
+[0m16:07:20.599175 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.exam1.prepped_data'
+[0m16:07:20.600492 [debug] [Thread-4 (]: Began compiling node model.exam1.prepped_data
+[0m16:07:20.608253 [debug] [Thread-4 (]: Writing injected SQL for node "model.exam1.prepped_data"
+[0m16:07:20.612288 [debug] [Thread-4 (]: Timing info for model.exam1.prepped_data (compile): 16:07:20.601226 => 16:07:20.611824
+[0m16:07:20.613486 [debug] [Thread-4 (]: Began executing node model.exam1.prepped_data
+[0m16:07:20.617598 [debug] [Thread-4 (]: Using snowflake connection "model.exam1.prepped_data"
+[0m16:07:20.618551 [debug] [Thread-4 (]: On model.exam1.prepped_data: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.prepped_data"} */
+show parameters like 'query_tag' in session
+[0m16:07:20.619475 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m16:07:21.260933 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:07:21.265358 [debug] [Thread-4 (]: Setting query_tag to 'prepped_data'. Will reset to '' after materialization.
+[0m16:07:21.271443 [debug] [Thread-4 (]: Using snowflake connection "model.exam1.prepped_data"
+[0m16:07:21.273703 [debug] [Thread-4 (]: On model.exam1.prepped_data: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.prepped_data"} */
+alter session set query_tag = 'prepped_data'
+[0m16:07:21.512305 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:07:21.517978 [debug] [Thread-4 (]: Writing runtime sql for node "model.exam1.prepped_data"
+[0m16:07:21.521714 [debug] [Thread-4 (]: Using snowflake connection "model.exam1.prepped_data"
+[0m16:07:21.522897 [debug] [Thread-4 (]: On model.exam1.prepped_data: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.prepped_data"} */
+create or replace   view KEITA_NAKATA_DB.AIRFLOW_DBT.prepped_data
+  
+   as (
+    SELECT A.ID 
+    , FIRST_NAME
+    , LAST_NAME
+    , birthdate
+    , BOOKING_REFERENCE
+    , HOTEL
+    , BOOKING_DATE
+    , COST
+FROM KEITA_NAKATA_DB.AIRFLOW_DBT.customer  A
+JOIN KEITA_NAKATA_DB.AIRFLOW_DBT.combined_bookings B
+on A.ID = B.ID
+  );
+[0m16:07:22.058691 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:07:22.060406 [debug] [Thread-4 (]: Timing info for model.exam1.prepped_data (execute): 16:07:20.614427 => 16:07:22.060269
+[0m16:07:22.060806 [debug] [Thread-4 (]: On model.exam1.prepped_data: Close
+[0m16:07:22.287228 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '99033bb0-ecab-4e6d-b663-aebb6622a9ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff605bddc0>]}
+[0m16:07:22.289371 [info ] [Thread-4 (]: 3 of 3 OK created sql view model AIRFLOW_DBT.prepped_data ...................... [[32mSUCCESS 1[0m in 1.69s]
+[0m16:07:22.292808 [debug] [Thread-4 (]: Finished running node model.exam1.prepped_data
+[0m16:07:22.321860 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:07:22.323047 [debug] [MainThread]: Connection 'model.exam1.combined_bookings' was properly closed.
+[0m16:07:22.327371 [debug] [MainThread]: Connection 'model.exam1.customer' was properly closed.
+[0m16:07:22.332308 [debug] [MainThread]: Connection 'model.exam1.prepped_data' was properly closed.
+[0m16:07:22.333490 [info ] [MainThread]: 
+[0m16:07:22.334433 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 5.79 seconds (5.79s).
+[0m16:07:22.335558 [debug] [MainThread]: Command end result
+[0m16:07:22.345250 [info ] [MainThread]: 
+[0m16:07:22.346439 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:07:22.348083 [info ] [MainThread]: 
+[0m16:07:22.350766 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m16:07:22.353609 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 6.329498, "process_user_time": 3.034676, "process_kernel_time": 0.236286, "process_mem_max_rss": "245816", "process_out_blocks": "8", "process_in_blocks": "0"}
+[0m16:07:22.354630 [debug] [MainThread]: Command `dbt run` succeeded at 16:07:22.354505 after 6.33 seconds
+[0m16:07:22.355134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff844fa870>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6f5295b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff83f9c7d0>]}
+[0m16:07:22.355672 [debug] [MainThread]: Flushing usage events
+[0m16:07:27.802934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa111f8c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa111c350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa111cbf0>]}
+
+
+============================== 16:07:27.806955 | 3496e0d5-52e2-4ba2-91d7-53a3f651737d ==============================
+[0m16:07:27.806955 [info ] [MainThread]: Running with dbt=1.7.14
+[0m16:07:27.807464 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'debug': 'False', 'version_check': 'True', 'log_path': '/dbt/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run --models analysis --profiles-dir .', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:07:27.810541 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'dbt_account'
+[0m16:07:27.811286 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.031978626, "process_user_time": 1.369748, "process_kernel_time": 0.046092, "process_mem_max_rss": "210852", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m16:07:27.811741 [debug] [MainThread]: Command `dbt run` failed at 16:07:27.811661 after 0.03 seconds
+[0m16:07:27.812110 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa35d4740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa16989b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa15bc9b0>]}
+[0m16:07:27.812555 [debug] [MainThread]: Flushing usage events
+[0m16:09:26.630692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffabe3ce30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffac3c4bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffabe3d190>]}
+
+
+============================== 16:09:26.635222 | 256e29fe-1caf-490b-a3e9-45c4869f862f ==============================
+[0m16:09:26.635222 [info ] [MainThread]: Running with dbt=1.7.14
+[0m16:09:26.635980 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '.', 'log_path': '/dbt/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --models transform --profiles-dir .', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:09:27.278826 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '256e29fe-1caf-490b-a3e9-45c4869f862f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff90f1ea20>]}
+[0m16:09:27.309232 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '256e29fe-1caf-490b-a3e9-45c4869f862f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff90a10830>]}
+[0m16:09:27.310142 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m16:09:27.319065 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m16:09:27.360303 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:09:27.360760 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:09:27.361449 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.my_new_project.analysis
+- models.my_new_project.transform
+[0m16:09:27.365003 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '256e29fe-1caf-490b-a3e9-45c4869f862f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff90cf5d00>]}
+[0m16:09:27.374743 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '256e29fe-1caf-490b-a3e9-45c4869f862f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff90a85580>]}
+[0m16:09:27.375251 [info ] [MainThread]: Found 5 models, 3 seeds, 0 sources, 0 exposures, 0 metrics, 546 macros, 0 groups, 0 semantic models
+[0m16:09:27.375845 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '256e29fe-1caf-490b-a3e9-45c4869f862f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff90b42ea0>]}
+[0m16:09:27.376911 [info ] [MainThread]: 
+[0m16:09:27.377683 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:09:27.379232 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_KEITA_NAKATA_DB'
+[0m16:09:27.387799 [debug] [ThreadPool]: Using snowflake connection "list_KEITA_NAKATA_DB"
+[0m16:09:27.388682 [debug] [ThreadPool]: On list_KEITA_NAKATA_DB: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "connection_name": "list_KEITA_NAKATA_DB"} */
+show terse schemas in database KEITA_NAKATA_DB
+    limit 10000
+[0m16:09:27.389106 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:09:28.336724 [debug] [ThreadPool]: SQL status: SUCCESS 12 in 1.0 seconds
+[0m16:09:28.340754 [debug] [ThreadPool]: On list_KEITA_NAKATA_DB: Close
+[0m16:09:28.573635 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_KEITA_NAKATA_DB, now list_KEITA_NAKATA_DB_AIRFLOW_DBT)
+[0m16:09:28.579378 [debug] [ThreadPool]: Using snowflake connection "list_KEITA_NAKATA_DB_AIRFLOW_DBT"
+[0m16:09:28.579964 [debug] [ThreadPool]: On list_KEITA_NAKATA_DB_AIRFLOW_DBT: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "connection_name": "list_KEITA_NAKATA_DB_AIRFLOW_DBT"} */
+show terse objects in KEITA_NAKATA_DB.AIRFLOW_DBT limit 10000
+[0m16:09:28.580372 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:09:29.242343 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.0 seconds
+[0m16:09:29.249073 [debug] [ThreadPool]: On list_KEITA_NAKATA_DB_AIRFLOW_DBT: Close
+[0m16:09:29.652997 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '256e29fe-1caf-490b-a3e9-45c4869f862f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff90ca1e80>]}
+[0m16:09:29.656990 [info ] [MainThread]: Concurrency: 200 threads (target='dev')
+[0m16:09:29.658950 [info ] [MainThread]: 
+[0m16:09:29.715350 [debug] [Thread-1 (]: Began running node model.exam1.combined_bookings
+[0m16:09:29.715901 [debug] [Thread-2 (]: Began running node model.exam1.customer
+[0m16:09:29.716918 [info ] [Thread-1 (]: 1 of 3 START sql view model AIRFLOW_DBT.combined_bookings ...................... [RUN]
+[0m16:09:29.723491 [info ] [Thread-2 (]: 2 of 3 START sql view model AIRFLOW_DBT.customer ............................... [RUN]
+[0m16:09:29.724543 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_KEITA_NAKATA_DB_AIRFLOW_DBT, now model.exam1.combined_bookings)
+[0m16:09:29.725456 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.exam1.customer'
+[0m16:09:29.726039 [debug] [Thread-1 (]: Began compiling node model.exam1.combined_bookings
+[0m16:09:29.726664 [debug] [Thread-2 (]: Began compiling node model.exam1.customer
+[0m16:09:29.753791 [debug] [Thread-2 (]: Writing injected SQL for node "model.exam1.customer"
+[0m16:09:29.751901 [debug] [Thread-1 (]: Using snowflake connection "model.exam1.combined_bookings"
+[0m16:09:29.754807 [debug] [Thread-1 (]: On model.exam1.combined_bookings: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.combined_bookings"} */
+describe table KEITA_NAKATA_DB.AIRFLOW_DBT.bookings_1
+[0m16:09:29.755948 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:09:29.757765 [debug] [Thread-2 (]: Timing info for model.exam1.customer (compile): 16:09:29.752015 => 16:09:29.757543
+[0m16:09:29.758567 [debug] [Thread-2 (]: Began executing node model.exam1.customer
+[0m16:09:29.764387 [debug] [Thread-2 (]: Using snowflake connection "model.exam1.customer"
+[0m16:09:29.765078 [debug] [Thread-2 (]: On model.exam1.customer: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.customer"} */
+show parameters like 'query_tag' in session
+[0m16:09:29.765487 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:09:30.339882 [debug] [Thread-1 (]: SQL status: SUCCESS 5 in 1.0 seconds
+[0m16:09:30.352925 [debug] [Thread-1 (]: Using snowflake connection "model.exam1.combined_bookings"
+[0m16:09:30.356327 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:09:30.357983 [debug] [Thread-1 (]: On model.exam1.combined_bookings: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.combined_bookings"} */
+describe table KEITA_NAKATA_DB.AIRFLOW_DBT.bookings_2
+[0m16:09:30.362346 [debug] [Thread-2 (]: Setting query_tag to 'customer'. Will reset to '' after materialization.
+[0m16:09:30.367146 [debug] [Thread-2 (]: Using snowflake connection "model.exam1.customer"
+[0m16:09:30.368660 [debug] [Thread-2 (]: On model.exam1.customer: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.customer"} */
+alter session set query_tag = 'customer'
+[0m16:09:30.524309 [debug] [Thread-1 (]: SQL status: SUCCESS 5 in 0.0 seconds
+[0m16:09:30.541107 [debug] [Thread-1 (]: Writing injected SQL for node "model.exam1.combined_bookings"
+[0m16:09:30.546656 [debug] [Thread-1 (]: Timing info for model.exam1.combined_bookings (compile): 16:09:29.727130 => 16:09:30.546074
+[0m16:09:30.547983 [debug] [Thread-1 (]: Began executing node model.exam1.combined_bookings
+[0m16:09:30.552819 [debug] [Thread-1 (]: Using snowflake connection "model.exam1.combined_bookings"
+[0m16:09:30.553992 [debug] [Thread-1 (]: On model.exam1.combined_bookings: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.combined_bookings"} */
+show parameters like 'query_tag' in session
+[0m16:09:30.568537 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:09:30.596837 [debug] [Thread-2 (]: Writing runtime sql for node "model.exam1.customer"
+[0m16:09:30.599338 [debug] [Thread-2 (]: Using snowflake connection "model.exam1.customer"
+[0m16:09:30.600045 [debug] [Thread-2 (]: On model.exam1.customer: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.customer"} */
+create or replace   view KEITA_NAKATA_DB.AIRFLOW_DBT.customer
+  
+   as (
+    SELECT ID 
+    , FIRST_NAME
+    , LAST_NAME
+    , birthdate
+FROM KEITA_NAKATA_DB.AIRFLOW_DBT.customers
+  );
+[0m16:09:30.722895 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:09:30.726081 [debug] [Thread-1 (]: Setting query_tag to 'combined_bookings'. Will reset to '' after materialization.
+[0m16:09:30.727580 [debug] [Thread-1 (]: Using snowflake connection "model.exam1.combined_bookings"
+[0m16:09:30.728521 [debug] [Thread-1 (]: On model.exam1.combined_bookings: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.combined_bookings"} */
+alter session set query_tag = 'combined_bookings'
+[0m16:09:31.386470 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:09:31.393364 [debug] [Thread-1 (]: Writing runtime sql for node "model.exam1.combined_bookings"
+[0m16:09:31.398506 [debug] [Thread-1 (]: Using snowflake connection "model.exam1.combined_bookings"
+[0m16:09:31.399740 [debug] [Thread-1 (]: On model.exam1.combined_bookings: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.combined_bookings"} */
+create or replace   view KEITA_NAKATA_DB.AIRFLOW_DBT.combined_bookings
+  
+   as (
+    
+    
+
+        (
+            select
+                cast('KEITA_NAKATA_DB.AIRFLOW_DBT.bookings_1' as TEXT) as _dbt_source_relation,
+
+                
+                    cast("ID" as NUMBER(38,0)) as "ID" ,
+                    cast("BOOKING_REFERENCE" as NUMBER(38,0)) as "BOOKING_REFERENCE" ,
+                    cast("HOTEL" as character varying(16777216)) as "HOTEL" ,
+                    cast("BOOKING_DATE" as DATE) as "BOOKING_DATE" ,
+                    cast("COST" as NUMBER(38,0)) as "COST" 
+
+            from KEITA_NAKATA_DB.AIRFLOW_DBT.bookings_1
+
+            
+        )
+
+        union all
+        
+
+        (
+            select
+                cast('KEITA_NAKATA_DB.AIRFLOW_DBT.bookings_2' as TEXT) as _dbt_source_relation,
+
+                
+                    cast("ID" as NUMBER(38,0)) as "ID" ,
+                    cast("BOOKING_REFERENCE" as NUMBER(38,0)) as "BOOKING_REFERENCE" ,
+                    cast("HOTEL" as character varying(16777216)) as "HOTEL" ,
+                    cast("BOOKING_DATE" as DATE) as "BOOKING_DATE" ,
+                    cast("COST" as NUMBER(38,0)) as "COST" 
+
+            from KEITA_NAKATA_DB.AIRFLOW_DBT.bookings_2
+
+            
+        )
+
+        
+  );
+[0m16:09:31.807802 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:09:31.808664 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:09:31.827434 [debug] [Thread-1 (]: Timing info for model.exam1.combined_bookings (execute): 16:09:30.548883 => 16:09:31.827253
+[0m16:09:31.829344 [debug] [Thread-2 (]: Timing info for model.exam1.customer (execute): 16:09:29.758992 => 16:09:31.829192
+[0m16:09:31.829904 [debug] [Thread-1 (]: On model.exam1.combined_bookings: Close
+[0m16:09:31.830411 [debug] [Thread-2 (]: On model.exam1.customer: Close
+[0m16:09:32.097747 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '256e29fe-1caf-490b-a3e9-45c4869f862f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff905f2cf0>]}
+[0m16:09:32.101746 [info ] [Thread-1 (]: 1 of 3 OK created sql view model AIRFLOW_DBT.combined_bookings ................. [[32mSUCCESS 1[0m in 2.37s]
+[0m16:09:32.104339 [debug] [Thread-1 (]: Finished running node model.exam1.combined_bookings
+[0m16:09:32.150693 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '256e29fe-1caf-490b-a3e9-45c4869f862f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff905aafc0>]}
+[0m16:09:32.154345 [info ] [Thread-2 (]: 2 of 3 OK created sql view model AIRFLOW_DBT.customer .......................... [[32mSUCCESS 1[0m in 2.42s]
+[0m16:09:32.157754 [debug] [Thread-2 (]: Finished running node model.exam1.customer
+[0m16:09:32.162327 [debug] [Thread-4 (]: Began running node model.exam1.prepped_data
+[0m16:09:32.164982 [info ] [Thread-4 (]: 3 of 3 START sql view model AIRFLOW_DBT.prepped_data ........................... [RUN]
+[0m16:09:32.168535 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.exam1.prepped_data'
+[0m16:09:32.170156 [debug] [Thread-4 (]: Began compiling node model.exam1.prepped_data
+[0m16:09:32.176899 [debug] [Thread-4 (]: Writing injected SQL for node "model.exam1.prepped_data"
+[0m16:09:32.180464 [debug] [Thread-4 (]: Timing info for model.exam1.prepped_data (compile): 16:09:32.171412 => 16:09:32.180072
+[0m16:09:32.181549 [debug] [Thread-4 (]: Began executing node model.exam1.prepped_data
+[0m16:09:32.185320 [debug] [Thread-4 (]: Using snowflake connection "model.exam1.prepped_data"
+[0m16:09:32.186284 [debug] [Thread-4 (]: On model.exam1.prepped_data: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.prepped_data"} */
+show parameters like 'query_tag' in session
+[0m16:09:32.187183 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m16:09:33.549327 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:09:33.553118 [debug] [Thread-4 (]: Setting query_tag to 'prepped_data'. Will reset to '' after materialization.
+[0m16:09:33.554911 [debug] [Thread-4 (]: Using snowflake connection "model.exam1.prepped_data"
+[0m16:09:33.556046 [debug] [Thread-4 (]: On model.exam1.prepped_data: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.prepped_data"} */
+alter session set query_tag = 'prepped_data'
+[0m16:09:33.724313 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:09:33.734092 [debug] [Thread-4 (]: Writing runtime sql for node "model.exam1.prepped_data"
+[0m16:09:33.740097 [debug] [Thread-4 (]: Using snowflake connection "model.exam1.prepped_data"
+[0m16:09:33.741758 [debug] [Thread-4 (]: On model.exam1.prepped_data: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.prepped_data"} */
+create or replace   view KEITA_NAKATA_DB.AIRFLOW_DBT.prepped_data
+  
+   as (
+    SELECT A.ID 
+    , FIRST_NAME
+    , LAST_NAME
+    , birthdate
+    , BOOKING_REFERENCE
+    , HOTEL
+    , BOOKING_DATE
+    , COST
+FROM KEITA_NAKATA_DB.AIRFLOW_DBT.customer  A
+JOIN KEITA_NAKATA_DB.AIRFLOW_DBT.combined_bookings B
+on A.ID = B.ID
+  );
+[0m16:09:34.256448 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:09:34.261458 [debug] [Thread-4 (]: Timing info for model.exam1.prepped_data (execute): 16:09:32.182301 => 16:09:34.261155
+[0m16:09:34.262396 [debug] [Thread-4 (]: On model.exam1.prepped_data: Close
+[0m16:09:34.495846 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '256e29fe-1caf-490b-a3e9-45c4869f862f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff905a9be0>]}
+[0m16:09:34.499049 [info ] [Thread-4 (]: 3 of 3 OK created sql view model AIRFLOW_DBT.prepped_data ...................... [[32mSUCCESS 1[0m in 2.33s]
+[0m16:09:34.502170 [debug] [Thread-4 (]: Finished running node model.exam1.prepped_data
+[0m16:09:34.521965 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:09:34.523385 [debug] [MainThread]: Connection 'model.exam1.combined_bookings' was properly closed.
+[0m16:09:34.524411 [debug] [MainThread]: Connection 'model.exam1.customer' was properly closed.
+[0m16:09:34.525295 [debug] [MainThread]: Connection 'model.exam1.prepped_data' was properly closed.
+[0m16:09:34.526284 [info ] [MainThread]: 
+[0m16:09:34.527688 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 7.15 seconds (7.15s).
+[0m16:09:34.529405 [debug] [MainThread]: Command end result
+[0m16:09:34.543737 [info ] [MainThread]: 
+[0m16:09:34.544755 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:09:34.545568 [info ] [MainThread]: 
+[0m16:09:34.546364 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m16:09:34.547688 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 7.936995, "process_user_time": 3.142405, "process_kernel_time": 0.288154, "process_mem_max_rss": "248944", "process_out_blocks": "8", "process_in_blocks": "0"}
+[0m16:09:34.548434 [debug] [MainThread]: Command `dbt run` succeeded at 16:09:34.548303 after 7.94 seconds
+[0m16:09:34.549031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffac7521b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff90a11220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff933f8b30>]}
+[0m16:09:34.549629 [debug] [MainThread]: Flushing usage events
+[0m16:09:39.049463 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9bf3d940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9c79c920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9c42faa0>]}
+
+
+============================== 16:09:39.053240 | a242896d-4e0b-457f-b324-24bf07d4c208 ==============================
+[0m16:09:39.053240 [info ] [MainThread]: Running with dbt=1.7.14
+[0m16:09:39.053756 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'debug': 'False', 'version_check': 'True', 'log_path': '/dbt/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run --models analysis --profiles-dir .', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:09:39.474696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a242896d-4e0b-457f-b324-24bf07d4c208', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9beba060>]}
+[0m16:09:39.500590 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a242896d-4e0b-457f-b324-24bf07d4c208', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff828be390>]}
+[0m16:09:39.501206 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m16:09:39.508919 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m16:09:39.546072 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:09:39.546490 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:09:39.547108 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.my_new_project.transform
+- models.my_new_project.analysis
+[0m16:09:39.550265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a242896d-4e0b-457f-b324-24bf07d4c208', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff80ad67b0>]}
+[0m16:09:39.557544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a242896d-4e0b-457f-b324-24bf07d4c208', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff80b88710>]}
+[0m16:09:39.557977 [info ] [MainThread]: Found 5 models, 3 seeds, 0 sources, 0 exposures, 0 metrics, 546 macros, 0 groups, 0 semantic models
+[0m16:09:39.558384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a242896d-4e0b-457f-b324-24bf07d4c208', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8163fe60>]}
+[0m16:09:39.559327 [info ] [MainThread]: 
+[0m16:09:39.559948 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:09:39.560751 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_KEITA_NAKATA_DB'
+[0m16:09:39.567902 [debug] [ThreadPool]: Using snowflake connection "list_KEITA_NAKATA_DB"
+[0m16:09:39.568338 [debug] [ThreadPool]: On list_KEITA_NAKATA_DB: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "connection_name": "list_KEITA_NAKATA_DB"} */
+show terse schemas in database KEITA_NAKATA_DB
+    limit 10000
+[0m16:09:39.568696 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:09:40.212075 [debug] [ThreadPool]: SQL status: SUCCESS 12 in 1.0 seconds
+[0m16:09:40.218839 [debug] [ThreadPool]: On list_KEITA_NAKATA_DB: Close
+[0m16:09:40.470969 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_KEITA_NAKATA_DB, now list_KEITA_NAKATA_DB_AIRFLOW_DBT)
+[0m16:09:40.488889 [debug] [ThreadPool]: Using snowflake connection "list_KEITA_NAKATA_DB_AIRFLOW_DBT"
+[0m16:09:40.490271 [debug] [ThreadPool]: On list_KEITA_NAKATA_DB_AIRFLOW_DBT: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "connection_name": "list_KEITA_NAKATA_DB_AIRFLOW_DBT"} */
+show terse objects in KEITA_NAKATA_DB.AIRFLOW_DBT limit 10000
+[0m16:09:40.491241 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:09:41.132969 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.0 seconds
+[0m16:09:41.135962 [debug] [ThreadPool]: On list_KEITA_NAKATA_DB_AIRFLOW_DBT: Close
+[0m16:09:41.384355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a242896d-4e0b-457f-b324-24bf07d4c208', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff80ad6a50>]}
+[0m16:09:41.388009 [info ] [MainThread]: Concurrency: 200 threads (target='dev')
+[0m16:09:41.390933 [info ] [MainThread]: 
+[0m16:09:41.438738 [debug] [Thread-1 (]: Began running node model.exam1.hotel_count_by_day
+[0m16:09:41.439301 [debug] [Thread-2 (]: Began running node model.exam1.thirty_day_avg_cost
+[0m16:09:41.440132 [info ] [Thread-1 (]: 1 of 2 START sql view model AIRFLOW_DBT.hotel_count_by_day ..................... [RUN]
+[0m16:09:41.441217 [info ] [Thread-2 (]: 2 of 2 START sql view model AIRFLOW_DBT.thirty_day_avg_cost .................... [RUN]
+[0m16:09:41.442294 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_KEITA_NAKATA_DB_AIRFLOW_DBT, now model.exam1.hotel_count_by_day)
+[0m16:09:41.443236 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.exam1.thirty_day_avg_cost'
+[0m16:09:41.443806 [debug] [Thread-1 (]: Began compiling node model.exam1.hotel_count_by_day
+[0m16:09:41.444412 [debug] [Thread-2 (]: Began compiling node model.exam1.thirty_day_avg_cost
+[0m16:09:41.449916 [debug] [Thread-1 (]: Writing injected SQL for node "model.exam1.hotel_count_by_day"
+[0m16:09:41.452140 [debug] [Thread-2 (]: Writing injected SQL for node "model.exam1.thirty_day_avg_cost"
+[0m16:09:41.454231 [debug] [Thread-2 (]: Timing info for model.exam1.thirty_day_avg_cost (compile): 16:09:41.450390 => 16:09:41.454054
+[0m16:09:41.454599 [debug] [Thread-1 (]: Timing info for model.exam1.hotel_count_by_day (compile): 16:09:41.444880 => 16:09:41.454427
+[0m16:09:41.455020 [debug] [Thread-2 (]: Began executing node model.exam1.thirty_day_avg_cost
+[0m16:09:41.455482 [debug] [Thread-1 (]: Began executing node model.exam1.hotel_count_by_day
+[0m16:09:41.460797 [debug] [Thread-2 (]: Using snowflake connection "model.exam1.thirty_day_avg_cost"
+[0m16:09:41.462448 [debug] [Thread-1 (]: Using snowflake connection "model.exam1.hotel_count_by_day"
+[0m16:09:41.462912 [debug] [Thread-2 (]: On model.exam1.thirty_day_avg_cost: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.thirty_day_avg_cost"} */
+show parameters like 'query_tag' in session
+[0m16:09:41.463350 [debug] [Thread-1 (]: On model.exam1.hotel_count_by_day: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.hotel_count_by_day"} */
+show parameters like 'query_tag' in session
+[0m16:09:41.463787 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:09:41.464201 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:09:42.144637 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:09:42.151302 [debug] [Thread-2 (]: Setting query_tag to 'thirty_day_avg_cost'. Will reset to '' after materialization.
+[0m16:09:42.154204 [debug] [Thread-2 (]: Using snowflake connection "model.exam1.thirty_day_avg_cost"
+[0m16:09:42.156610 [debug] [Thread-2 (]: On model.exam1.thirty_day_avg_cost: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.thirty_day_avg_cost"} */
+alter session set query_tag = 'thirty_day_avg_cost'
+[0m16:09:42.186659 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:09:42.188966 [debug] [Thread-1 (]: Setting query_tag to 'hotel_count_by_day'. Will reset to '' after materialization.
+[0m16:09:42.190404 [debug] [Thread-1 (]: Using snowflake connection "model.exam1.hotel_count_by_day"
+[0m16:09:42.191260 [debug] [Thread-1 (]: On model.exam1.hotel_count_by_day: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.hotel_count_by_day"} */
+alter session set query_tag = 'hotel_count_by_day'
+[0m16:09:42.303297 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:09:42.323488 [debug] [Thread-2 (]: Writing runtime sql for node "model.exam1.thirty_day_avg_cost"
+[0m16:09:42.326158 [debug] [Thread-2 (]: Using snowflake connection "model.exam1.thirty_day_avg_cost"
+[0m16:09:42.326797 [debug] [Thread-2 (]: On model.exam1.thirty_day_avg_cost: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.thirty_day_avg_cost"} */
+create or replace   view KEITA_NAKATA_DB.AIRFLOW_DBT.thirty_day_avg_cost
+  
+   as (
+    SELECT
+  BOOKING_DATE,
+  HOTEL,
+  COST,
+  AVG(COST) OVER (
+    ORDER BY BOOKING_DATE ROWS BETWEEN 29 PRECEDING AND CURRENT ROW
+  ) as "30_DAY_AVG_COST",
+  COST -   AVG(COST) OVER (
+    ORDER BY BOOKING_DATE ROWS BETWEEN 29 PRECEDING AND CURRENT ROW
+  ) as "DIFF_BTW_ACTUAL_AVG"
+FROM KEITA_NAKATA_DB.AIRFLOW_DBT.prepped_data
+  );
+[0m16:09:42.350844 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:09:42.352921 [debug] [Thread-1 (]: Writing runtime sql for node "model.exam1.hotel_count_by_day"
+[0m16:09:42.354794 [debug] [Thread-1 (]: Using snowflake connection "model.exam1.hotel_count_by_day"
+[0m16:09:42.355595 [debug] [Thread-1 (]: On model.exam1.hotel_count_by_day: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "model.exam1.hotel_count_by_day"} */
+create or replace   view KEITA_NAKATA_DB.AIRFLOW_DBT.hotel_count_by_day
+  
+   as (
+    SELECT
+  BOOKING_DATE,
+  HOTEL,
+  COUNT(ID) as count_bookings
+FROM KEITA_NAKATA_DB.AIRFLOW_DBT.prepped_data
+GROUP BY
+  BOOKING_DATE,
+  HOTEL
+  );
+[0m16:09:42.865320 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:09:42.900378 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:09:42.906838 [debug] [Thread-2 (]: Timing info for model.exam1.thirty_day_avg_cost (execute): 16:09:41.455811 => 16:09:42.906523
+[0m16:09:42.910344 [debug] [Thread-1 (]: Timing info for model.exam1.hotel_count_by_day (execute): 16:09:41.461173 => 16:09:42.910084
+[0m16:09:42.911310 [debug] [Thread-2 (]: On model.exam1.thirty_day_avg_cost: Close
+[0m16:09:42.912200 [debug] [Thread-1 (]: On model.exam1.hotel_count_by_day: Close
+[0m16:09:43.147013 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a242896d-4e0b-457f-b324-24bf07d4c208', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff80c73bf0>]}
+[0m16:09:43.154470 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a242896d-4e0b-457f-b324-24bf07d4c208', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7bf1dac0>]}
+[0m16:09:43.151951 [info ] [Thread-2 (]: 2 of 2 OK created sql view model AIRFLOW_DBT.thirty_day_avg_cost ............... [[32mSUCCESS 1[0m in 1.70s]
+[0m16:09:43.156852 [info ] [Thread-1 (]: 1 of 2 OK created sql view model AIRFLOW_DBT.hotel_count_by_day ................ [[32mSUCCESS 1[0m in 1.71s]
+[0m16:09:43.159002 [debug] [Thread-2 (]: Finished running node model.exam1.thirty_day_avg_cost
+[0m16:09:43.160505 [debug] [Thread-1 (]: Finished running node model.exam1.hotel_count_by_day
+[0m16:09:43.177547 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:09:43.178606 [debug] [MainThread]: Connection 'model.exam1.hotel_count_by_day' was properly closed.
+[0m16:09:43.179445 [debug] [MainThread]: Connection 'model.exam1.thirty_day_avg_cost' was properly closed.
+[0m16:09:43.180342 [info ] [MainThread]: 
+[0m16:09:43.181653 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 3.62 seconds (3.62s).
+[0m16:09:43.183348 [debug] [MainThread]: Command end result
+[0m16:09:43.200617 [info ] [MainThread]: 
+[0m16:09:43.201649 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:09:43.202332 [info ] [MainThread]: 
+[0m16:09:43.202979 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m16:09:43.204199 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 4.1758833, "process_user_time": 2.781641, "process_kernel_time": 0.136374, "process_mem_max_rss": "239952", "process_out_blocks": "8", "process_in_blocks": "0"}
+[0m16:09:43.204936 [debug] [MainThread]: Command `dbt run` succeeded at 16:09:43.204800 after 4.18 seconds
+[0m16:09:43.205523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9c78af00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8163fe60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff834f92e0>]}
+[0m16:09:43.206176 [debug] [MainThread]: Flushing usage events

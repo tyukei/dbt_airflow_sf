@@ -1,9 +1,7 @@
 
     
     
-    
-    create table KEITA_NAKATA_DB.AIRFLOW_DBT.bookings_1 (id integer,booking_reference integer,hotel text,booking_date date,cost integer)
-  ;
+    truncate table "KEITA_NAKATA_DB"."AIRFLOW_DBT"."BOOKINGS_1";
     -- dbt seed --
     
             insert into KEITA_NAKATA_DB.AIRFLOW_DBT.bookings_1 (id, booking_reference, hotel, booking_date, cost) values

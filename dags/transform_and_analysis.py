@@ -20,6 +20,10 @@ with DAG('2_daily_transformation_analysis', default_args=default_args, schedule_
         env={
             'dbt_user': '{{ var.value.dbt_user }}',
             'dbt_password': '{{ var.value.dbt_password }}',
+            'dbt_account':'{{ var.value.dbt_account }}',
+            'dbt_database':'{{ var.value.dbt_database }}',
+            'dbt_warehouse':'{{ var.value.dbt_warehouse }}',
+            'dbt_schema':'{{ var.value.dbt_schema }}',
             **os.environ
         },
         dag=dag
@@ -31,6 +35,10 @@ with DAG('2_daily_transformation_analysis', default_args=default_args, schedule_
         env={
             'dbt_user': '{{ var.value.dbt_user }}',
             'dbt_password': '{{ var.value.dbt_password }}',
+            'dbt_account':'{{ var.value.dbt_account }}',
+            'dbt_database':'{{ var.value.dbt_database }}',
+            'dbt_warehouse':'{{ var.value.dbt_warehouse }}',
+            'dbt_schema':'{{ var.value.dbt_schema }}',
             **os.environ
         },
         dag=dag

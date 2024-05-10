@@ -1,0 +1,42 @@
+[2024-05-10T16:07:26.299+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-10T16:07:26.309+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 2_daily_transformation_analysis.daily_analysis manual__2024-05-10T16:07:13.368599+00:00 [queued]>
+[2024-05-10T16:07:26.312+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 2_daily_transformation_analysis.daily_analysis manual__2024-05-10T16:07:13.368599+00:00 [queued]>
+[2024-05-10T16:07:26.313+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 1
+[2024-05-10T16:07:26.318+0000] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): daily_analysis> on 2024-05-10 16:07:13.368599+00:00
+[2024-05-10T16:07:26.320+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1017) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-10T16:07:26.321+0000] {standard_task_runner.py:63} INFO - Started process 1019 to run task
+[2024-05-10T16:07:26.321+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', '2_daily_transformation_analysis', 'daily_analysis', 'manual__2024-05-10T16:07:13.368599+00:00', '--job-id', '115', '--raw', '--subdir', 'DAGS_FOLDER/transform_and_analysis.py', '--cfg-path', '/tmp/tmpmwbs5l77']
+[2024-05-10T16:07:26.323+0000] {standard_task_runner.py:91} INFO - Job 115: Subtask daily_analysis
+[2024-05-10T16:07:26.342+0000] {task_command.py:426} INFO - Running <TaskInstance: 2_daily_transformation_analysis.daily_analysis manual__2024-05-10T16:07:13.368599+00:00 [running]> on host e4fe3fcdc4ab
+[2024-05-10T16:07:26.388+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='2_daily_transformation_analysis' AIRFLOW_CTX_TASK_ID='daily_analysis' AIRFLOW_CTX_EXECUTION_DATE='2024-05-10T16:07:13.368599+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-10T16:07:13.368599+00:00'
+[2024-05-10T16:07:26.389+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-10T16:07:26.390+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-05-10T16:07:26.390+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /dbt && dbt run --models analysis --profiles-dir .']
+[2024-05-10T16:07:26.394+0000] {subprocess.py:86} INFO - Output:
+[2024-05-10T16:07:27.807+0000] {subprocess.py:93} INFO - [0m16:07:27  Running with dbt=1.7.14
+[2024-05-10T16:07:27.810+0000] {subprocess.py:93} INFO - [0m16:07:27  Encountered an error:
+[2024-05-10T16:07:27.811+0000] {subprocess.py:93} INFO - Parsing Error
+[2024-05-10T16:07:27.811+0000] {subprocess.py:93} INFO -   Env var required but not provided: 'dbt_account'
+[2024-05-10T16:07:29.519+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2024-05-10T16:07:29.520+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-10T16:07:29.525+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2024-05-10T16:07:29.527+0000] {taskinstance.py:1205} INFO - Marking task as FAILED. dag_id=2_daily_transformation_analysis, task_id=daily_analysis, execution_date=20240510T160713, start_date=20240510T160726, end_date=20240510T160729
+[2024-05-10T16:07:29.535+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 115 for task daily_analysis (Bash command failed. The command returned a non-zero exit code 2.; 1019)
+[2024-05-10T16:07:29.579+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-05-10T16:07:29.586+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-10T16:07:29.587+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
