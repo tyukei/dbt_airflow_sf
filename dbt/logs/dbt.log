@@ -1,0 +1,677 @@
+[0m12:00:13.297708 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7cf058b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7d193350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7d191850>]}
+
+
+============================== 12:00:13.310989 | 2005667f-101c-4245-8689-504736285daf ==============================
+[0m12:00:13.310989 [info ] [MainThread]: Running with dbt=1.7.14
+[0m12:00:13.311489 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'debug': 'False', 'version_check': 'True', 'log_path': '/dbt/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt seed --profiles-dir .', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:00:13.314947 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'dbt_account'
+[0m12:00:13.315628 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.039330833, "process_user_time": 1.397609, "process_kernel_time": 0.121226, "process_mem_max_rss": "220944", "process_out_blocks": "4472", "command_success": false, "process_in_blocks": "0"}
+[0m12:00:13.316089 [debug] [MainThread]: Command `dbt seed` failed at 12:00:13.315994 after 0.04 seconds
+[0m12:00:13.316475 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7d190d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7d601be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7d388860>]}
+[0m12:00:13.316881 [debug] [MainThread]: Flushing usage events
+[0m12:11:21.492090 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffab871f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffabc934d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffab982780>]}
+
+
+============================== 12:11:21.496126 | e713f47d-54a0-4efb-840b-1cad82e688e6 ==============================
+[0m12:11:21.496126 [info ] [MainThread]: Running with dbt=1.7.14
+[0m12:11:21.496617 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/dbt/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt seed --profiles-dir .', 'send_anonymous_usage_stats': 'True'}
+[0m12:11:21.499404 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'dbt_account'
+[0m12:11:21.500123 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.028844457, "process_user_time": 1.503271, "process_kernel_time": 0.117111, "process_mem_max_rss": "211880", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m12:11:21.500581 [debug] [MainThread]: Command `dbt seed` failed at 12:11:21.500497 after 0.03 seconds
+[0m12:11:21.500948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffac28c3b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffabcb5850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffab871ee0>]}
+[0m12:11:21.501367 [debug] [MainThread]: Flushing usage events
+[0m12:12:44.039430 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffab0c59a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffab022180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffab0c73b0>]}
+
+
+============================== 12:12:44.043586 | 16d74b4c-5456-4e9e-8586-493198e44482 ==============================
+[0m12:12:44.043586 [info ] [MainThread]: Running with dbt=1.7.14
+[0m12:12:44.044078 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'debug': 'False', 'version_check': 'True', 'log_path': '/dbt/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt seed --profiles-dir .', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m12:12:44.046954 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'dbt_account'
+[0m12:12:44.047625 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.028992042, "process_user_time": 1.458865, "process_kernel_time": 0.131066, "process_mem_max_rss": "212296", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m12:12:44.048044 [debug] [MainThread]: Command `dbt seed` failed at 12:12:44.047944 after 0.03 seconds
+[0m12:12:44.048376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffabda2c30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffab5b6a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffab3317f0>]}
+[0m12:12:44.048677 [debug] [MainThread]: Flushing usage events
+[0m12:19:46.008412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8441e420>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff84876c00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff84bbfe30>]}
+
+
+============================== 12:19:46.014412 | 69080588-8978-404d-8452-f3dc0340e230 ==============================
+[0m12:19:46.014412 [info ] [MainThread]: Running with dbt=1.7.14
+[0m12:19:46.015208 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/dbt/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --models transform --profiles-dir .', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:19:46.018735 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'dbt_account'
+[0m12:19:46.019738 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.06815004, "process_user_time": 1.503921, "process_kernel_time": 0.095823, "process_mem_max_rss": "212296", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m12:19:46.020276 [debug] [MainThread]: Command `dbt run` failed at 12:19:46.020167 after 0.07 seconds
+[0m12:19:46.020820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff848beb70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff849a7380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff85664470>]}
+[0m12:19:46.021334 [debug] [MainThread]: Flushing usage events
+[0m12:19:47.946517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7a192060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7a190050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7a190ec0>]}
+
+
+============================== 12:19:47.950347 | a534e0e2-f69b-4d13-82f3-7737b11ef239 ==============================
+[0m12:19:47.950347 [info ] [MainThread]: Running with dbt=1.7.14
+[0m12:19:47.950909 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/dbt/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt seed --profiles-dir .', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:19:47.953730 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'dbt_account'
+[0m12:19:47.954427 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.027484957, "process_user_time": 1.31628, "process_kernel_time": 0.102099, "process_mem_max_rss": "212296", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m12:19:47.954893 [debug] [MainThread]: Command `dbt seed` failed at 12:19:47.954803 after 0.03 seconds
+[0m12:19:47.955260 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7c654260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7a5b17f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7a836cf0>]}
+[0m12:19:47.955634 [debug] [MainThread]: Flushing usage events
+[0m12:25:39.000281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8dc30530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8dc30e00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8dc30e90>]}
+
+
+============================== 12:25:39.005710 | 0718ccd7-ed6b-4528-b987-5583813776d7 ==============================
+[0m12:25:39.005710 [info ] [MainThread]: Running with dbt=1.7.14
+[0m12:25:39.006467 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/dbt/logs', 'version_check': 'True', 'profiles_dir': '.', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt seed --profiles-dir .', 'send_anonymous_usage_stats': 'True'}
+[0m12:25:39.009292 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'dbt_account'
+[0m12:25:39.010181 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.029964333, "process_user_time": 1.406401, "process_kernel_time": 0.155486, "process_mem_max_rss": "212304", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m12:25:39.010611 [debug] [MainThread]: Command `dbt seed` failed at 12:25:39.010535 after 0.03 seconds
+[0m12:25:39.010986 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff900f44d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8e554470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8e1accb0>]}
+[0m12:25:39.011363 [debug] [MainThread]: Flushing usage events
+[0m12:30:05.011664 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff80eb0980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff812d08f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff80eb00b0>]}
+
+
+============================== 12:30:05.017623 | b276312e-b9ef-477f-91c4-97057b4124cc ==============================
+[0m12:30:05.017623 [info ] [MainThread]: Running with dbt=1.7.14
+[0m12:30:05.018200 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/dbt/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt seed --profiles-dir .', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:30:05.021019 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'dbt_account'
+[0m12:30:05.021706 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.02973725, "process_user_time": 1.346438, "process_kernel_time": 0.087898, "process_mem_max_rss": "211556", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m12:30:05.022159 [debug] [MainThread]: Command `dbt seed` failed at 12:30:05.022073 after 0.03 seconds
+[0m12:30:05.022517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff813eb140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff81066d80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff80fc2690>]}
+[0m12:30:05.022885 [debug] [MainThread]: Flushing usage events
+[0m12:30:42.578986 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7cd817c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7f1d4440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7cd811c0>]}
+
+
+============================== 12:30:42.582875 | 257cf4ca-0b36-4c64-8326-6f979d046fbf ==============================
+[0m12:30:42.582875 [info ] [MainThread]: Running with dbt=1.7.14
+[0m12:30:42.583635 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/dbt/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt seed --profiles-dir .', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:30:42.586463 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'dbt_account'
+[0m12:30:42.587314 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.030945083, "process_user_time": 1.438946, "process_kernel_time": 0.078942, "process_mem_max_rss": "211572", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m12:30:42.587768 [debug] [MainThread]: Command `dbt seed` failed at 12:30:42.587686 after 0.03 seconds
+[0m12:30:42.588131 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7ce92540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7d2229c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7cd80a70>]}
+[0m12:30:42.588536 [debug] [MainThread]: Flushing usage events
+[0m12:33:22.797959 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff88b51ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff88b50f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff88b51160>]}
+
+
+============================== 12:33:22.803631 | e6a0b527-2fe4-40ad-821b-0261a1184219 ==============================
+[0m12:33:22.803631 [info ] [MainThread]: Running with dbt=1.7.14
+[0m12:33:22.804670 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/dbt/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt seed --profiles-dir .', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m12:33:22.808983 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'dbt_account'
+[0m12:33:22.810799 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.040930793, "process_user_time": 1.595453, "process_kernel_time": 0.08624, "process_mem_max_rss": "211568", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m12:33:22.811745 [debug] [MainThread]: Command `dbt seed` failed at 12:33:22.811606 after 0.04 seconds
+[0m12:33:22.812380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8d827170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff88b521b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff88c62750>]}
+[0m12:33:22.813036 [debug] [MainThread]: Flushing usage events
+[0m21:38:08.638279 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a2fad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f0ac10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f0b390>]}
+
+
+============================== 21:38:08.641046 | c4e6b45b-6eb1-4332-9fbb-0697e803aa41 ==============================
+[0m21:38:08.641046 [info ] [MainThread]: Running with dbt=1.7.14
+[0m21:38:08.641470 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/k-nakata/Documents/Git/dbt_airflow_sf/dbt/logs', 'profiles_dir': '/Users/k-nakata/Documents/Git/dbt_airflow_sf/dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt deps', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m21:38:08.687137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c4e6b45b-6eb1-4332-9fbb-0697e803aa41', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106758210>]}
+[0m21:38:08.689323 [debug] [MainThread]: Set downloads directory='/var/folders/cs/h3mgvs7n0kdfp440_nqfxvym0000gn/T/dbt-downloads-_llzlyy8'
+[0m21:38:08.689559 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m21:38:10.502480 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m21:38:10.505108 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils.json
+[0m21:38:11.869032 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils.json 200
+[0m21:38:11.876272 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `fishtown-analytics/dbt_utils` package is deprecated in favor of
+`dbt-labs/dbt_utils`. Please update your `packages.yml` configuration to use
+`dbt-labs/dbt_utils` instead.
+[0m21:38:11.877372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'c4e6b45b-6eb1-4332-9fbb-0697e803aa41', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106eeba90>]}
+[0m21:38:11.881029 [info ] [MainThread]: Installing fishtown-analytics/dbt_utils
+[0m21:38:14.078138 [info ] [MainThread]: Installed from version 0.6.4
+[0m21:38:14.078550 [info ] [MainThread]: Updated version available: 0.7.0
+[0m21:38:14.078881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'c4e6b45b-6eb1-4332-9fbb-0697e803aa41', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f8bed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f736d0>]}
+[0m21:38:14.079227 [info ] [MainThread]: 
+[0m21:38:14.079474 [info ] [MainThread]: Updates available for packages: ['fishtown-analytics/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[0m21:38:14.081732 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 5.470275, "process_user_time": 1.033851, "process_kernel_time": 0.160824, "process_mem_max_rss": "108658688", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m21:38:14.082228 [debug] [MainThread]: Command `dbt deps` succeeded at 21:38:14.082122 after 5.47 seconds
+[0m21:38:14.082528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f13c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f10e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1028d5c90>]}
+[0m21:38:14.082816 [debug] [MainThread]: Flushing usage events
+[0m12:39:08.341162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa86e1b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa9735d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa95c7320>]}
+
+
+============================== 12:39:08.345742 | 7163c5ac-2556-4fa1-b840-da8b3d2d539f ==============================
+[0m12:39:08.345742 [info ] [MainThread]: Running with dbt=1.7.14
+[0m12:39:08.346464 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/dbt/logs', 'profiles_dir': '.', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt seed --profiles-dir .', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m12:39:08.349225 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'dbt_account'
+[0m12:39:08.350258 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.029492293, "process_user_time": 1.461739, "process_kernel_time": 0.162303, "process_mem_max_rss": "214880", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m12:39:08.350715 [debug] [MainThread]: Command `dbt seed` failed at 12:39:08.350613 after 0.03 seconds
+[0m12:39:08.351026 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa87f1b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa8b26f60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa86e02c0>]}
+[0m12:39:08.351347 [debug] [MainThread]: Flushing usage events
+[0m12:41:00.443758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff99641100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff99a86210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff99e8f8c0>]}
+
+
+============================== 12:41:00.448214 | 862b4b2e-0b1e-43c6-b1a8-2b91ca5da307 ==============================
+[0m12:41:00.448214 [info ] [MainThread]: Running with dbt=1.7.14
+[0m12:41:00.448711 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '.', 'log_path': '/dbt/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt seed --profiles-dir .', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m12:41:00.451494 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'dbt_account'
+[0m12:41:00.452164 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.028110042, "process_user_time": 1.338757, "process_kernel_time": 0.074543, "process_mem_max_rss": "214900", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m12:41:00.452653 [debug] [MainThread]: Command `dbt seed` failed at 12:41:00.452571 after 0.03 seconds
+[0m12:41:00.452997 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff99a608c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff99adcb60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff996431a0>]}
+[0m12:41:00.453365 [debug] [MainThread]: Flushing usage events
+[0m14:46:48.171931 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa17f1d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa25b78c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa1c8ea20>]}
+
+
+============================== 14:46:48.178728 | 7558931e-247e-4ebd-a776-740d2aafa1c5 ==============================
+[0m14:46:48.178728 [info ] [MainThread]: Running with dbt=1.7.14
+[0m14:46:48.179421 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/dbt/logs', 'profiles_dir': '.', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt seed --profiles-dir .', 'send_anonymous_usage_stats': 'True'}
+[0m14:46:48.182487 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'dbt_account'
+[0m14:46:48.183165 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.032087456, "process_user_time": 1.327534, "process_kernel_time": 0.113874, "process_mem_max_rss": "214076", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:46:48.183649 [debug] [MainThread]: Command `dbt seed` failed at 14:46:48.183559 after 0.03 seconds
+[0m14:46:48.184012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa1e436e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa1cfb5f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa1c8ea20>]}
+[0m14:46:48.184407 [debug] [MainThread]: Flushing usage events
+[0m14:59:07.808087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff98ba2bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9a4dcfb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9920c470>]}
+
+
+============================== 14:59:07.812104 | 78f59a6c-080d-4a52-8053-ff559158e98d ==============================
+[0m14:59:07.812104 [info ] [MainThread]: Running with dbt=1.7.14
+[0m14:59:07.812594 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '.', 'log_path': '/dbt/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt seed --profiles-dir .', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:59:07.815468 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'dbt_account'
+[0m14:59:07.816153 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.027887667, "process_user_time": 1.320477, "process_kernel_time": 0.095106, "process_mem_max_rss": "211428", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:59:07.816613 [debug] [MainThread]: Command `dbt seed` failed at 14:59:07.816516 after 0.03 seconds
+[0m14:59:07.816979 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff98ca3950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff99121100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff993ee930>]}
+[0m14:59:07.817371 [debug] [MainThread]: Flushing usage events
+[0m15:01:50.449506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa84b1010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa89eb4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa916f8c0>]}
+
+
+============================== 15:01:50.454252 | 52e7b69d-86de-46d2-bf26-cbc5a33b2c5e ==============================
+[0m15:01:50.454252 [info ] [MainThread]: Running with dbt=1.7.14
+[0m15:01:50.455094 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'version_check': 'True', 'debug': 'False', 'log_path': '/dbt/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt seed --profiles-dir .', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:01:50.458666 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'dbt_account'
+[0m15:01:50.459832 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.03773704, "process_user_time": 1.375931, "process_kernel_time": 0.069046, "process_mem_max_rss": "211444", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:01:50.460633 [debug] [MainThread]: Command `dbt seed` failed at 15:01:50.460512 after 0.04 seconds
+[0m15:01:50.461155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa8ccb440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa84b03e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa85c21b0>]}
+[0m15:01:50.461761 [debug] [MainThread]: Flushing usage events
+[0m15:01:56.559276 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m15:02:59.240921 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7f551940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7f550950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7f551580>]}
+
+
+============================== 15:02:59.244763 | 357ea226-385e-4199-a42e-6dfa3ffc0f17 ==============================
+[0m15:02:59.244763 [info ] [MainThread]: Running with dbt=1.7.14
+[0m15:02:59.245312 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/dbt/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt seed --profiles-dir .', 'send_anonymous_usage_stats': 'True'}
+[0m15:02:59.247962 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'dbt_account'
+[0m15:02:59.248607 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.02869846, "process_user_time": 1.503277, "process_kernel_time": 0.135284, "process_mem_max_rss": "211424", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:02:59.249079 [debug] [MainThread]: Command `dbt seed` failed at 15:02:59.249002 after 0.03 seconds
+[0m15:02:59.249431 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7f972420>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff803e21b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7fd94470>]}
+[0m15:02:59.249800 [debug] [MainThread]: Flushing usage events
+[0m15:04:34.891210 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffabd61d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffac202480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffac94f8c0>]}
+
+
+============================== 15:04:34.895510 | 24550b75-494b-4dfb-8b3b-dd9c00318233 ==============================
+[0m15:04:34.895510 [info ] [MainThread]: Running with dbt=1.7.14
+[0m15:04:34.896056 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '.', 'log_path': '/dbt/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt seed --profiles-dir .', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:04:34.899153 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'dbt_account'
+[0m15:04:34.899889 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.03117075, "process_user_time": 1.491474, "process_kernel_time": 0.062565, "process_mem_max_rss": "211440", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:04:34.900347 [debug] [MainThread]: Command `dbt seed` failed at 15:04:34.900269 after 0.03 seconds
+[0m15:04:34.900712 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffac202480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffac1817f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffac180080>]}
+[0m15:04:34.901090 [debug] [MainThread]: Flushing usage events
+[0m15:09:46.150395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb35c5790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb41d78c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb42a38c0>]}
+
+
+============================== 15:09:46.154072 | 81cb3a5a-dcf6-49bd-86ec-bf00bf4a3f0b ==============================
+[0m15:09:46.154072 [info ] [MainThread]: Running with dbt=1.7.14
+[0m15:09:46.154542 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'debug': 'False', 'version_check': 'True', 'log_path': '/dbt/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt seed --profiles-dir .', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:09:46.157303 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'dbt_account'
+[0m15:09:46.157987 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.027373709, "process_user_time": 1.281952, "process_kernel_time": 0.052915, "process_mem_max_rss": "211428", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:09:46.158461 [debug] [MainThread]: Command `dbt seed` failed at 15:09:46.158384 after 0.03 seconds
+[0m15:09:46.158836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb81571a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb398e360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb3830110>]}
+[0m15:09:46.159185 [debug] [MainThread]: Flushing usage events
+[0m15:16:12.008134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffafdf0a40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb0296780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb22b40e0>]}
+
+
+============================== 15:16:12.012102 | e9b1148c-5a7c-4f39-851a-ecb93dc527a6 ==============================
+[0m15:16:12.012102 [info ] [MainThread]: Running with dbt=1.7.14
+[0m15:16:12.012591 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/dbt/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt seed --profiles-dir .', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:16:12.016180 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'dbt_database'
+[0m15:16:12.016904 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.028999709, "process_user_time": 1.467252, "process_kernel_time": 0.091577, "process_mem_max_rss": "212448", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:16:12.017353 [debug] [MainThread]: Command `dbt seed` failed at 15:16:12.017275 after 0.03 seconds
+[0m15:16:12.017783 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb07f30b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb118fbc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffafdf0fe0>]}
+[0m15:16:12.018177 [debug] [MainThread]: Flushing usage events
+[0m15:22:21.351782 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff963819a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff96908500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff963801a0>]}
+
+
+============================== 15:22:21.355594 | cdc3d149-ef6f-4881-9e34-7be9ed6575bf ==============================
+[0m15:22:21.355594 [info ] [MainThread]: Running with dbt=1.7.14
+[0m15:22:21.356073 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'debug': 'False', 'version_check': 'True', 'log_path': '/dbt/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt seed --profiles-dir .', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:22:21.978521 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cdc3d149-ef6f-4881-9e34-7be9ed6575bf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7d8ffe90>]}
+[0m15:22:22.005419 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cdc3d149-ef6f-4881-9e34-7be9ed6575bf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7707f7d0>]}
+[0m15:22:22.006062 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m15:22:22.013521 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Failed to read package: Runtime Error
+    This version of dbt is not supported with the 'dbt_utils' package.
+      Installed version of dbt: =1.7.14
+      Required version of dbt for 'dbt_utils': ['>=0.18.0', '<0.20.0']
+    Check for a different version of the 'dbt_utils' package, or run dbt again with --no-version-check
+    
+  
+  Error encountered in /dbt/dbt_packages/dbt_utils/dbt_project.yml
+
+Error encountered in /dbt/dbt_packages/dbt_utils
+[0m15:22:22.014249 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.6823938, "process_user_time": 2.572994, "process_kernel_time": 0.13684, "process_mem_max_rss": "211344", "process_in_blocks": "608", "process_out_blocks": "5224", "command_success": false}
+[0m15:22:22.014723 [debug] [MainThread]: Command `dbt seed` failed at 15:22:22.014619 after 0.68 seconds
+[0m15:22:22.015125 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff96492570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff772eb800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff77348800>]}
+[0m15:22:22.015511 [debug] [MainThread]: Flushing usage events
+[0m15:25:21.971689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa9331d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffab7842f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa99d2ff0>]}
+
+
+============================== 15:25:21.976471 | 3c56dff4-2b38-4c01-a64c-e19b3059b6d1 ==============================
+[0m15:25:21.976471 [info ] [MainThread]: Running with dbt=1.7.14
+[0m15:25:21.977037 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '.', 'log_path': '/dbt/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt seed --profiles-dir .', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:25:22.412476 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3c56dff4-2b38-4c01-a64c-e19b3059b6d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff908987a0>]}
+[0m15:25:22.448144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3c56dff4-2b38-4c01-a64c-e19b3059b6d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff90842750>]}
+[0m15:25:22.448914 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m15:25:22.457369 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Failed to read package: Runtime Error
+    This version of dbt is not supported with the 'dbt_utils' package.
+      Installed version of dbt: =1.7.14
+      Required version of dbt for 'dbt_utils': ['>=0.18.0', '<0.20.0']
+    Check for a different version of the 'dbt_utils' package, or run dbt again with --no-version-check
+    
+  
+  Error encountered in /dbt/dbt_packages/dbt_utils/dbt_project.yml
+
+Error encountered in /dbt/dbt_packages/dbt_utils
+[0m15:25:22.458184 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.5065383, "process_user_time": 2.383878, "process_kernel_time": 0.13728, "process_mem_max_rss": "214488", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:25:22.458685 [debug] [MainThread]: Command `dbt seed` failed at 15:25:22.458576 after 0.51 seconds
+[0m15:25:22.459114 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa9c3abd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8ade8a40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff89f63e90>]}
+[0m15:25:22.459499 [debug] [MainThread]: Flushing usage events
+[0m15:27:04.854281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8fc41d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff904a0e30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff904a0ce0>]}
+
+
+============================== 15:27:04.858066 | cff67793-b869-4d4a-bf0d-b1cdd2ebd417 ==============================
+[0m15:27:04.858066 [info ] [MainThread]: Running with dbt=1.7.14
+[0m15:27:04.858573 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'debug': 'False', 'version_check': 'True', 'log_path': '/dbt/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt seed --profiles-dir .', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:27:05.299151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cff67793-b869-4d4a-bf0d-b1cdd2ebd417', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7b968470>]}
+[0m15:27:05.326186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cff67793-b869-4d4a-bf0d-b1cdd2ebd417', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff74a9da00>]}
+[0m15:27:05.326883 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m15:27:05.334337 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Failed to read package: Runtime Error
+    This version of dbt is not supported with the 'dbt_utils' package.
+      Installed version of dbt: =1.7.14
+      Required version of dbt for 'dbt_utils': ['>=0.18.0', '<0.20.0']
+    Check for a different version of the 'dbt_utils' package, or run dbt again with --no-version-check
+    
+  
+  Error encountered in /dbt/dbt_packages/dbt_utils/dbt_project.yml
+
+Error encountered in /dbt/dbt_packages/dbt_utils
+[0m15:27:05.335083 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.50082463, "process_user_time": 2.323107, "process_kernel_time": 0.157959, "process_mem_max_rss": "214496", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:27:05.335639 [debug] [MainThread]: Command `dbt seed` failed at 15:27:05.335547 after 0.50 seconds
+[0m15:27:05.336027 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff904a0e30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9017b650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff74f5ac30>]}
+[0m15:27:05.336420 [debug] [MainThread]: Flushing usage events
+[0m00:28:25.589226 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114ca16d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114877a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114ca2450>]}
+
+
+============================== 00:28:25.592253 | 6807ce17-e405-4424-a34a-5143c2bb04ad ==============================
+[0m00:28:25.592253 [info ] [MainThread]: Running with dbt=1.7.14
+[0m00:28:25.592611 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/k-nakata/Documents/Git/dbt_airflow_sf/dbt/logs', 'profiles_dir': '/Users/k-nakata/Documents/Git/dbt_airflow_sf/dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt deps', 'send_anonymous_usage_stats': 'True'}
+[0m00:28:25.635598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6807ce17-e405-4424-a34a-5143c2bb04ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114e15c50>]}
+[0m00:28:25.637606 [debug] [MainThread]: Set downloads directory='/var/folders/cs/h3mgvs7n0kdfp440_nqfxvym0000gn/T/dbt-downloads-l396jibt'
+[0m00:28:25.637859 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m00:28:26.161385 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m00:28:26.166636 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils.json
+[0m00:28:26.851042 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils.json 200
+[0m00:28:26.856237 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `fishtown-analytics/dbt_utils` package is deprecated in favor of
+`dbt-labs/dbt_utils`. Please update your `packages.yml` configuration to use
+`dbt-labs/dbt_utils` instead.
+[0m00:28:26.856918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '6807ce17-e405-4424-a34a-5143c2bb04ad', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114ece750>]}
+[0m00:28:26.860666 [info ] [MainThread]: Installing fishtown-analytics/dbt_utils
+[0m00:28:27.693400 [info ] [MainThread]: Installed from version 0.6.4
+[0m00:28:27.693813 [info ] [MainThread]: Updated version available: 0.7.0
+[0m00:28:27.694136 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '6807ce17-e405-4424-a34a-5143c2bb04ad', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114e92150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114e90790>]}
+[0m00:28:27.694469 [info ] [MainThread]: 
+[0m00:28:27.694715 [info ] [MainThread]: Updates available for packages: ['fishtown-analytics/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[0m00:28:27.725476 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 2.1721735, "process_user_time": 1.073821, "process_kernel_time": 0.198436, "process_mem_max_rss": "108691456", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m00:28:27.726089 [debug] [MainThread]: Command `dbt deps` succeeded at 00:28:27.725973 after 2.17 seconds
+[0m00:28:27.726392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104679c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114e90350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1047c3890>]}
+[0m00:28:27.726683 [debug] [MainThread]: Flushing usage events
+[0m15:29:39.495958 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff82842420>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff836ccb60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff830a0a70>]}
+
+
+============================== 15:29:39.499855 | d4291337-3bc5-41db-9ec0-fb226b085698 ==============================
+[0m15:29:39.499855 [info ] [MainThread]: Running with dbt=1.7.14
+[0m15:29:39.500306 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/dbt/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt seed --profiles-dir .', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:29:39.945844 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd4291337-3bc5-41db-9ec0-fb226b085698', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff635aca70>]}
+[0m15:29:39.972849 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd4291337-3bc5-41db-9ec0-fb226b085698', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff69fea810>]}
+[0m15:29:39.973571 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m15:29:39.981578 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Failed to read package: Runtime Error
+    This version of dbt is not supported with the 'dbt_utils' package.
+      Installed version of dbt: =1.7.14
+      Required version of dbt for 'dbt_utils': ['>=0.18.0', '<0.20.0']
+    Check for a different version of the 'dbt_utils' package, or run dbt again with --no-version-check
+    
+  
+  Error encountered in /dbt/dbt_packages/dbt_utils/dbt_project.yml
+
+Error encountered in /dbt/dbt_packages/dbt_utils
+[0m15:29:39.982314 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.5062428, "process_user_time": 2.321683, "process_kernel_time": 0.157385, "process_mem_max_rss": "211776", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:29:39.982869 [debug] [MainThread]: Command `dbt seed` failed at 15:29:39.982776 after 0.51 seconds
+[0m15:29:39.983277 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff836ccb60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff873874a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff69e0ac30>]}
+[0m15:29:39.983710 [debug] [MainThread]: Flushing usage events
+[0m00:39:39.622550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1121e7890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112252e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112253590>]}
+
+
+============================== 00:39:39.625226 | 33f212b6-b66d-4440-a480-3edb6e193c65 ==============================
+[0m00:39:39.625226 [info ] [MainThread]: Running with dbt=1.7.14
+[0m00:39:39.625598 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/k-nakata/Documents/Git/dbt_airflow_sf/dbt', 'log_path': '/Users/k-nakata/Documents/Git/dbt_airflow_sf/dbt/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt deps', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:39:39.672917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '33f212b6-b66d-4440-a480-3edb6e193c65', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111c7bf90>]}
+[0m00:39:39.674168 [debug] [MainThread]: Set downloads directory='/var/folders/cs/h3mgvs7n0kdfp440_nqfxvym0000gn/T/dbt-downloads-0lv3glak'
+[0m00:39:39.674467 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m00:39:40.788900 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m00:39:40.790308 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils.json
+[0m00:39:41.576495 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils.json 200
+[0m00:39:41.582409 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `fishtown-analytics/dbt_utils` package is deprecated in favor of
+`dbt-labs/dbt_utils`. Please update your `packages.yml` configuration to use
+`dbt-labs/dbt_utils` instead.
+[0m00:39:41.583372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '33f212b6-b66d-4440-a480-3edb6e193c65', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112233210>]}
+[0m00:39:41.587047 [error] [MainThread]: Encountered an error:
+Could not find a matching compatible version for package fishtown-analytics/dbt_utils
+  Requested range: =1.1.1, =1.1.1
+  Compatible versions: ['0.0.1', '0.1.0', '0.1.1', '0.1.2', '0.1.3', '0.1.4', '0.1.5', '0.1.6', '0.1.7', '0.1.8', '0.1.9', '0.1.10', '0.1.11', '0.1.12', '0.1.13', '0.1.14', '0.1.15', '0.1.16', '0.1.17', '0.1.18', '0.1.19', '0.1.20', '0.1.21', '0.1.22', '0.1.23', '0.1.24', '0.1.25', '0.2.0', '0.2.1', '0.2.2', '0.2.3', '0.2.4', '0.2.5', '0.3.0', '0.4.0', '0.4.1', '0.5.0', '0.5.1', '0.6.0', '0.6.1', '0.6.2', '0.6.3', '0.6.4', '0.6.5', '0.6.6', '0.7.0']
+
+  Not shown: package versions incompatible with installed version of dbt-core
+  To include them, run 'dbt --no-version-check deps'
+[0m00:39:41.590422 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_wall_clock_time": 1.9971546, "process_user_time": 0.941952, "process_kernel_time": 0.120541, "process_mem_max_rss": "106823680", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m00:39:41.591414 [debug] [MainThread]: Command `dbt deps` failed at 00:39:41.591212 after 2.00 seconds
+[0m00:39:41.592001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049a9c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112252a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a4cad0>]}
+[0m00:39:41.592553 [debug] [MainThread]: Flushing usage events
+[0m15:41:19.349552 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff810139e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff81a2deb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff81122a50>]}
+
+
+============================== 15:41:19.353973 | 0e3e7e30-7633-43ec-bb18-00472aff63c8 ==============================
+[0m15:41:19.353973 [info ] [MainThread]: Running with dbt=1.7.14
+[0m15:41:19.354526 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '.', 'log_path': '/dbt/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt seed --profiles-dir .', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:41:19.783416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0e3e7e30-7633-43ec-bb18-00472aff63c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff61e51d00>]}
+[0m15:41:19.810391 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0e3e7e30-7633-43ec-bb18-00472aff63c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff810b6ba0>]}
+[0m15:41:19.811122 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m15:41:19.812048 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found 1 package(s) specified in packages.yml, but only 0 package(s) installed in dbt_packages. Run "dbt deps" to install package dependencies.
+[0m15:41:19.812802 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.48315954, "process_user_time": 2.491906, "process_kernel_time": 0.122833, "process_mem_max_rss": "210120", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:41:19.813346 [debug] [MainThread]: Command `dbt seed` failed at 15:41:19.813262 after 0.48 seconds
+[0m15:41:19.813739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff814680e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff621417c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff61c81370>]}
+[0m15:41:19.814114 [debug] [MainThread]: Flushing usage events
+[0m15:43:46.513701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaa7f2630>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaa8f34d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffab6adaf0>]}
+
+
+============================== 15:43:46.517861 | 1bdfa422-a90e-4f24-935f-544fa63cda41 ==============================
+[0m15:43:46.517861 [info ] [MainThread]: Running with dbt=1.7.14
+[0m15:43:46.518368 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '.', 'log_path': '/dbt/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt seed --profiles-dir .', 'send_anonymous_usage_stats': 'True'}
+[0m15:43:46.955060 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1bdfa422-a90e-4f24-935f-544fa63cda41', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff90b75550>]}
+[0m15:43:46.988076 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1bdfa422-a90e-4f24-935f-544fa63cda41', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff91d76ba0>]}
+[0m15:43:46.991365 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m15:43:46.998857 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found 1 package(s) specified in packages.yml, but only 0 package(s) installed in dbt_packages. Run "dbt deps" to install package dependencies.
+[0m15:43:47.008953 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.5094607, "process_user_time": 2.292919, "process_kernel_time": 0.15246, "process_mem_max_rss": "213976", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:43:47.013507 [debug] [MainThread]: Command `dbt seed` failed at 15:43:47.013106 after 0.52 seconds
+[0m15:43:47.018270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffab0361e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8b911370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8b925970>]}
+[0m15:43:47.027999 [debug] [MainThread]: Flushing usage events
+[0m00:44:32.605000 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049836d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049fe8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049ff050>]}
+
+
+============================== 00:44:32.607540 | 19ecebed-8716-413a-a44f-494b15de34fe ==============================
+[0m00:44:32.607540 [info ] [MainThread]: Running with dbt=1.7.14
+[0m00:44:32.607864 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/k-nakata/Documents/Git/dbt_airflow_sf/dbt', 'log_path': '/Users/k-nakata/Documents/Git/dbt_airflow_sf/dbt/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt deps', 'send_anonymous_usage_stats': 'True'}
+[0m00:44:32.653648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '19ecebed-8716-413a-a44f-494b15de34fe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049d8610>]}
+[0m00:44:32.654848 [debug] [MainThread]: Set downloads directory='/var/folders/cs/h3mgvs7n0kdfp440_nqfxvym0000gn/T/dbt-downloads-478dyekv'
+[0m00:44:32.655141 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m00:44:33.609735 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m00:44:33.616386 [error] [MainThread]: Encountered an error:
+Package dbt-labs/dbt-utils was not found in the package index
+[0m00:44:33.621347 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_wall_clock_time": 1.0449201, "process_user_time": 0.907217, "process_kernel_time": 0.124276, "process_mem_max_rss": "105709568", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m00:44:33.622335 [debug] [MainThread]: Command `dbt deps` failed at 00:44:33.622120 after 1.05 seconds
+[0m00:44:33.622941 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a02f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1003c5c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049ff510>]}
+[0m00:44:33.623533 [debug] [MainThread]: Flushing usage events
+[0m00:45:11.519169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070bfb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071030d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107103850>]}
+
+
+============================== 00:45:11.522331 | ae6c9c3d-82c1-4ffb-a0b5-46b06ba01822 ==============================
+[0m00:45:11.522331 [info ] [MainThread]: Running with dbt=1.7.14
+[0m00:45:11.522688 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/k-nakata/Documents/Git/dbt_airflow_sf/dbt', 'log_path': '/Users/k-nakata/Documents/Git/dbt_airflow_sf/dbt/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt deps', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m00:45:11.561559 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ae6c9c3d-82c1-4ffb-a0b5-46b06ba01822', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10709a750>]}
+[0m00:45:11.562592 [debug] [MainThread]: Set downloads directory='/var/folders/cs/h3mgvs7n0kdfp440_nqfxvym0000gn/T/dbt-downloads-2s353rqs'
+[0m00:45:11.562877 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m00:45:11.934132 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m00:45:11.937762 [error] [MainThread]: Encountered an error:
+Package dbt-labs/dbt-utils was not found in the package index
+[0m00:45:11.941628 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_wall_clock_time": 0.4577618, "process_user_time": 0.885024, "process_kernel_time": 0.12362, "process_mem_max_rss": "106446848", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m00:45:11.942351 [debug] [MainThread]: Command `dbt deps` failed at 00:45:11.942191 after 0.46 seconds
+[0m00:45:11.942829 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107117e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102ad9c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10709a090>]}
+[0m00:45:11.943334 [debug] [MainThread]: Flushing usage events
+[0m00:46:29.354344 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e677d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104978d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ed6d90>]}
+
+
+============================== 00:46:29.357098 | e10cab40-89db-4e55-8d39-e9da461f8ee9 ==============================
+[0m00:46:29.357098 [info ] [MainThread]: Running with dbt=1.7.14
+[0m00:46:29.357440 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/k-nakata/Documents/Git/dbt_airflow_sf/dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/Users/k-nakata/Documents/Git/dbt_airflow_sf/dbt/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt deps', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:46:29.396089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e10cab40-89db-4e55-8d39-e9da461f8ee9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ed6c10>]}
+[0m00:46:29.397218 [debug] [MainThread]: Set downloads directory='/var/folders/cs/h3mgvs7n0kdfp440_nqfxvym0000gn/T/dbt-downloads-o4mz08r4'
+[0m00:46:29.397524 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m00:46:29.916368 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m00:46:29.922575 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m00:46:30.230406 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m00:46:30.248713 [info ] [MainThread]: Updating lock file in file path: /Users/k-nakata/Documents/Git/dbt_airflow_sf/dbt/package-lock.yml
+[0m00:46:30.251005 [debug] [MainThread]: Set downloads directory='/var/folders/cs/h3mgvs7n0kdfp440_nqfxvym0000gn/T/dbt-downloads-bi35ttpv'
+[0m00:46:30.254880 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m00:46:31.091554 [info ] [MainThread]: Installed from version 1.1.1
+[0m00:46:31.091907 [info ] [MainThread]: Up to date!
+[0m00:46:31.092189 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'e10cab40-89db-4e55-8d39-e9da461f8ee9', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ed71d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f9c5d0>]}
+[0m00:46:31.094096 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 1.7669502, "process_user_time": 1.017977, "process_kernel_time": 0.149392, "process_mem_max_rss": "109379584", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m00:46:31.094543 [debug] [MainThread]: Command `dbt deps` succeeded at 00:46:31.094442 after 1.77 seconds
+[0m00:46:31.094827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10089dc50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ed5950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1009e7890>]}
+[0m00:46:31.095103 [debug] [MainThread]: Flushing usage events
+[0m15:49:12.998186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff998113a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff99d16930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9a05ec00>]}
+
+
+============================== 15:49:13.003506 | cdc5dc71-1e3b-475d-8ae8-13f0b6a778b4 ==============================
+[0m15:49:13.003506 [info ] [MainThread]: Running with dbt=1.7.14
+[0m15:49:13.004101 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/dbt/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt seed --profiles-dir .', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:49:13.667618 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cdc5dc71-1e3b-475d-8ae8-13f0b6a778b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7a617950>]}
+[0m15:49:13.694969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cdc5dc71-1e3b-475d-8ae8-13f0b6a778b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7a32b350>]}
+[0m15:49:13.695743 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m15:49:13.705198 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m15:49:13.706339 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:49:13.706734 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'cdc5dc71-1e3b-475d-8ae8-13f0b6a778b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7a4be5d0>]}
+[0m15:49:14.291569 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.my_new_project.transform
+- models.my_new_project.analysis
+[0m15:49:14.294725 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cdc5dc71-1e3b-475d-8ae8-13f0b6a778b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7909bf50>]}
+[0m15:49:14.302972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cdc5dc71-1e3b-475d-8ae8-13f0b6a778b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7908e870>]}
+[0m15:49:14.303495 [info ] [MainThread]: Found 5 models, 3 seeds, 0 sources, 0 exposures, 0 metrics, 546 macros, 0 groups, 0 semantic models
+[0m15:49:14.303911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cdc5dc71-1e3b-475d-8ae8-13f0b6a778b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff99d986b0>]}
+[0m15:49:14.305023 [info ] [MainThread]: 
+[0m15:49:14.305656 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:49:14.306530 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_KEITA_NAKATA_DB'
+[0m15:49:14.313911 [debug] [ThreadPool]: Using snowflake connection "list_KEITA_NAKATA_DB"
+[0m15:49:14.314338 [debug] [ThreadPool]: On list_KEITA_NAKATA_DB: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "connection_name": "list_KEITA_NAKATA_DB"} */
+show terse schemas in database KEITA_NAKATA_DB
+    limit 10000
+[0m15:49:14.314688 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:49:17.573724 [debug] [ThreadPool]: SQL status: SUCCESS 12 in 3.0 seconds
+[0m15:49:17.579912 [debug] [ThreadPool]: On list_KEITA_NAKATA_DB: Close
+[0m15:49:17.827703 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_KEITA_NAKATA_DB, now list_KEITA_NAKATA_DB_AIRFLOW_DBT)
+[0m15:49:17.838994 [debug] [ThreadPool]: Using snowflake connection "list_KEITA_NAKATA_DB_AIRFLOW_DBT"
+[0m15:49:17.839836 [debug] [ThreadPool]: On list_KEITA_NAKATA_DB_AIRFLOW_DBT: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "connection_name": "list_KEITA_NAKATA_DB_AIRFLOW_DBT"} */
+show terse objects in KEITA_NAKATA_DB.AIRFLOW_DBT limit 10000
+[0m15:49:17.840622 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:49:18.602086 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.0 seconds
+[0m15:49:18.605402 [debug] [ThreadPool]: On list_KEITA_NAKATA_DB_AIRFLOW_DBT: Close
+[0m15:49:18.875019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cdc5dc71-1e3b-475d-8ae8-13f0b6a778b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7a0d65d0>]}
+[0m15:49:18.878317 [info ] [MainThread]: Concurrency: 200 threads (target='dev')
+[0m15:49:18.880349 [info ] [MainThread]: 
+[0m15:49:18.936942 [debug] [Thread-1 (]: Began running node seed.exam1.bookings_1
+[0m15:49:18.937458 [debug] [Thread-2 (]: Began running node seed.exam1.bookings_2
+[0m15:49:18.937846 [debug] [Thread-3 (]: Began running node seed.exam1.customers
+[0m15:49:18.938593 [info ] [Thread-1 (]: 1 of 3 START seed file AIRFLOW_DBT.bookings_1 .................................. [RUN]
+[0m15:49:18.939258 [info ] [Thread-2 (]: 2 of 3 START seed file AIRFLOW_DBT.bookings_2 .................................. [RUN]
+[0m15:49:18.940139 [info ] [Thread-3 (]: 3 of 3 START seed file AIRFLOW_DBT.customers ................................... [RUN]
+[0m15:49:18.941033 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_KEITA_NAKATA_DB_AIRFLOW_DBT, now seed.exam1.bookings_1)
+[0m15:49:18.941749 [debug] [Thread-2 (]: Acquiring new snowflake connection 'seed.exam1.bookings_2'
+[0m15:49:18.942580 [debug] [Thread-3 (]: Acquiring new snowflake connection 'seed.exam1.customers'
+[0m15:49:18.943126 [debug] [Thread-1 (]: Began compiling node seed.exam1.bookings_1
+[0m15:49:18.943553 [debug] [Thread-2 (]: Began compiling node seed.exam1.bookings_2
+[0m15:49:18.944031 [debug] [Thread-3 (]: Began compiling node seed.exam1.customers
+[0m15:49:18.944585 [debug] [Thread-1 (]: Timing info for seed.exam1.bookings_1 (compile): 15:49:18.944423 => 15:49:18.944427
+[0m15:49:18.945067 [debug] [Thread-2 (]: Timing info for seed.exam1.bookings_2 (compile): 15:49:18.944903 => 15:49:18.944906
+[0m15:49:18.945604 [debug] [Thread-3 (]: Timing info for seed.exam1.customers (compile): 15:49:18.945455 => 15:49:18.945458
+[0m15:49:18.946097 [debug] [Thread-1 (]: Began executing node seed.exam1.bookings_1
+[0m15:49:18.946520 [debug] [Thread-2 (]: Began executing node seed.exam1.bookings_2
+[0m15:49:18.946991 [debug] [Thread-3 (]: Began executing node seed.exam1.customers
+[0m15:49:18.952446 [debug] [Thread-1 (]: Using snowflake connection "seed.exam1.bookings_1"
+[0m15:49:18.954010 [debug] [Thread-2 (]: Using snowflake connection "seed.exam1.bookings_2"
+[0m15:49:18.955612 [debug] [Thread-3 (]: Using snowflake connection "seed.exam1.customers"
+[0m15:49:18.956065 [debug] [Thread-1 (]: On seed.exam1.bookings_1: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_1"} */
+show parameters like 'query_tag' in session
+[0m15:49:18.956445 [debug] [Thread-2 (]: On seed.exam1.bookings_2: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_2"} */
+show parameters like 'query_tag' in session
+[0m15:49:18.956833 [debug] [Thread-3 (]: On seed.exam1.customers: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.customers"} */
+show parameters like 'query_tag' in session
+[0m15:49:18.957204 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:49:18.957538 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m15:49:18.957910 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:49:19.625767 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:49:19.627369 [debug] [Thread-2 (]: Setting query_tag to 'bookings_2'. Will reset to '' after materialization.
+[0m15:49:19.628211 [debug] [Thread-2 (]: Using snowflake connection "seed.exam1.bookings_2"
+[0m15:49:19.628714 [debug] [Thread-2 (]: On seed.exam1.bookings_2: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_2"} */
+alter session set query_tag = 'bookings_2'
+[0m15:49:19.632918 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:49:19.634374 [debug] [Thread-3 (]: Setting query_tag to 'customers'. Will reset to '' after materialization.
+[0m15:49:19.635305 [debug] [Thread-3 (]: Using snowflake connection "seed.exam1.customers"
+[0m15:49:19.635913 [debug] [Thread-3 (]: On seed.exam1.customers: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.customers"} */
+alter session set query_tag = 'customers'
+[0m15:49:19.649494 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:49:19.651193 [debug] [Thread-1 (]: Setting query_tag to 'bookings_1'. Will reset to '' after materialization.
+[0m15:49:19.652204 [debug] [Thread-1 (]: Using snowflake connection "seed.exam1.bookings_1"
+[0m15:49:19.652897 [debug] [Thread-1 (]: On seed.exam1.bookings_1: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_1"} */
+alter session set query_tag = 'bookings_1'
+[0m15:49:19.809209 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:49:19.844747 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:49:19.847033 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:49:19.861843 [debug] [Thread-2 (]: Using snowflake connection "seed.exam1.bookings_2"
+[0m15:49:19.865253 [debug] [Thread-2 (]: On seed.exam1.bookings_2: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_2"} */
+create table KEITA_NAKATA_DB.AIRFLOW_DBT.bookings_2 (id integer,booking_reference integer,hotel text,booking_date date,cost integer)
+[0m15:49:19.867237 [debug] [Thread-1 (]: Using snowflake connection "seed.exam1.bookings_1"
+[0m15:49:19.869835 [debug] [Thread-3 (]: Using snowflake connection "seed.exam1.customers"
+[0m15:49:19.870445 [debug] [Thread-1 (]: On seed.exam1.bookings_1: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_1"} */
+create table KEITA_NAKATA_DB.AIRFLOW_DBT.bookings_1 (id integer,booking_reference integer,hotel text,booking_date date,cost integer)
+[0m15:49:19.871201 [debug] [Thread-3 (]: On seed.exam1.customers: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.customers"} */
+create table KEITA_NAKATA_DB.AIRFLOW_DBT.customers (id integer,first_name text,last_name text,birthdate date,membership_no integer)
+[0m15:49:20.258430 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:49:20.261845 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:49:20.273060 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:49:20.295807 [debug] [Thread-1 (]: Using snowflake connection "seed.exam1.bookings_1"
+[0m15:49:20.298335 [debug] [Thread-3 (]: Using snowflake connection "seed.exam1.customers"
+[0m15:49:20.301519 [debug] [Thread-2 (]: Using snowflake connection "seed.exam1.bookings_2"
+[0m15:49:20.302517 [debug] [Thread-1 (]: On seed.exam1.bookings_1: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_1"} */
+BEGIN
+[0m15:49:20.303365 [debug] [Thread-3 (]: On seed.exam1.customers: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.customers"} */
+BEGIN
+[0m15:49:20.304240 [debug] [Thread-2 (]: On seed.exam1.bookings_2: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_2"} */
+BEGIN
+[0m15:49:20.492787 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:49:20.496388 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:49:20.499199 [debug] [Thread-1 (]: Using snowflake connection "seed.exam1.bookings_1"
+[0m15:49:20.501678 [debug] [Thread-3 (]: Using snowflake connection "seed.exam1.customers"
+[0m15:49:20.503420 [debug] [Thread-1 (]: On seed.exam1.bookings_1: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_1"} */
+insert into KEITA_NAKATA_DB.AIRFLOW_DBT.bookings_1 (id, booking_reference, hotel, booking_date, cost) values
+            (%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s)...
+[0m15:49:20.505660 [debug] [Thread-3 (]: On seed.exam1.customers: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.customers"} */
+insert into KEITA_NAKATA_DB.AIRFLOW_DBT.customers (id, first_name, last_name, birthdate, membership_no) values
+            (%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s)...
+[0m15:49:20.537791 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:49:20.540590 [debug] [Thread-2 (]: Using snowflake connection "seed.exam1.bookings_2"
+[0m15:49:20.541577 [debug] [Thread-2 (]: On seed.exam1.bookings_2: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_2"} */
+insert into KEITA_NAKATA_DB.AIRFLOW_DBT.bookings_2 (id, booking_reference, hotel, booking_date, cost) values
+            (%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s)...
+[0m15:49:21.505219 [debug] [Thread-1 (]: SQL status: SUCCESS 7 in 1.0 seconds
+[0m15:49:21.508881 [debug] [Thread-1 (]: Using snowflake connection "seed.exam1.bookings_1"
+[0m15:49:21.510729 [debug] [Thread-1 (]: On seed.exam1.bookings_1: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_1"} */
+COMMIT
+[0m15:49:21.518083 [debug] [Thread-2 (]: SQL status: SUCCESS 7 in 1.0 seconds
+[0m15:49:21.521096 [debug] [Thread-3 (]: SQL status: SUCCESS 2 in 1.0 seconds
+[0m15:49:21.522874 [debug] [Thread-2 (]: Using snowflake connection "seed.exam1.bookings_2"
+[0m15:49:21.524692 [debug] [Thread-3 (]: Using snowflake connection "seed.exam1.customers"
+[0m15:49:21.528283 [debug] [Thread-2 (]: On seed.exam1.bookings_2: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.bookings_2"} */
+COMMIT
+[0m15:49:21.529826 [debug] [Thread-3 (]: On seed.exam1.customers: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "default", "target_name": "dev", "node_id": "seed.exam1.customers"} */
+COMMIT
+[0m15:49:21.999279 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:49:22.001057 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:49:22.003267 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:49:22.015589 [debug] [Thread-2 (]: Writing runtime SQL for node "seed.exam1.bookings_2"
+[0m15:49:22.017981 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.exam1.bookings_1"
+[0m15:49:22.019906 [debug] [Thread-3 (]: Writing runtime SQL for node "seed.exam1.customers"
+[0m15:49:22.056254 [debug] [Thread-3 (]: Timing info for seed.exam1.customers (execute): 15:49:18.954356 => 15:49:22.056033
+[0m15:49:22.056943 [debug] [Thread-2 (]: Timing info for seed.exam1.bookings_2 (execute): 15:49:18.952771 => 15:49:22.056774
+[0m15:49:22.057567 [debug] [Thread-3 (]: On seed.exam1.customers: Close
+[0m15:49:22.059679 [debug] [Thread-1 (]: Timing info for seed.exam1.bookings_1 (execute): 15:49:18.947355 => 15:49:22.059516
+[0m15:49:22.060031 [debug] [Thread-2 (]: On seed.exam1.bookings_2: Close
+[0m15:49:22.062451 [debug] [Thread-1 (]: On seed.exam1.bookings_1: Close
+[0m15:49:22.289782 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cdc5dc71-1e3b-475d-8ae8-13f0b6a778b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff79223260>]}
+[0m15:49:22.292904 [info ] [Thread-1 (]: 1 of 3 OK loaded seed file AIRFLOW_DBT.bookings_1 .............................. [[32mINSERT 7[0m in 3.35s]
+[0m15:49:22.295327 [debug] [Thread-1 (]: Finished running node seed.exam1.bookings_1
+[0m15:49:22.350056 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cdc5dc71-1e3b-475d-8ae8-13f0b6a778b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff79220cb0>]}
+[0m15:49:22.352029 [info ] [Thread-2 (]: 2 of 3 OK loaded seed file AIRFLOW_DBT.bookings_2 .............................. [[32mINSERT 7[0m in 3.41s]
+[0m15:49:22.355401 [debug] [Thread-2 (]: Finished running node seed.exam1.bookings_2
+[0m15:49:22.361865 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cdc5dc71-1e3b-475d-8ae8-13f0b6a778b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff79221af0>]}
+[0m15:49:22.363907 [info ] [Thread-3 (]: 3 of 3 OK loaded seed file AIRFLOW_DBT.customers ............................... [[32mINSERT 2[0m in 3.42s]
+[0m15:49:22.365553 [debug] [Thread-3 (]: Finished running node seed.exam1.customers
+[0m15:49:22.381868 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:49:22.383106 [debug] [MainThread]: Connection 'seed.exam1.bookings_1' was properly closed.
+[0m15:49:22.384042 [debug] [MainThread]: Connection 'seed.exam1.bookings_2' was properly closed.
+[0m15:49:22.384891 [debug] [MainThread]: Connection 'seed.exam1.customers' was properly closed.
+[0m15:49:22.385835 [info ] [MainThread]: 
+[0m15:49:22.386792 [info ] [MainThread]: Finished running 3 seeds in 0 hours 0 minutes and 8.08 seconds (8.08s).
+[0m15:49:22.388413 [debug] [MainThread]: Command end result
+[0m15:49:22.402742 [info ] [MainThread]: 
+[0m15:49:22.403627 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:49:22.404377 [info ] [MainThread]: 
+[0m15:49:22.405069 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m15:49:22.406288 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 9.430052, "process_user_time": 3.904906, "process_kernel_time": 0.333663, "process_mem_max_rss": "248208", "process_in_blocks": "1472", "process_out_blocks": "1152"}
+[0m15:49:22.407046 [debug] [MainThread]: Command `dbt seed` succeeded at 15:49:22.406920 after 9.43 seconds
+[0m15:49:22.407637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff99d4b260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff99d04a40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7a94e870>]}
+[0m15:49:22.408260 [debug] [MainThread]: Flushing usage events

@@ -161,8 +161,8 @@ default:
 
 ```packages.yml
 packages:
-  - package: fishtown-analytics/dbt_utils
-    version: 0.6.4
+  - package: dbt-labs/dbt_utils
+    version: 1.1.1
 ```
 
 

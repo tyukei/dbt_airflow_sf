@@ -1,0 +1,42 @@
+[2024-05-10T15:01:48.838+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-10T15:01:48.853+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 1_init_once_seed_data.load_seed_data_once manual__2024-05-10T15:01:47.476319+00:00 [queued]>
+[2024-05-10T15:01:48.857+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 1_init_once_seed_data.load_seed_data_once manual__2024-05-10T15:01:47.476319+00:00 [queued]>
+[2024-05-10T15:01:48.859+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 1
+[2024-05-10T15:01:48.871+0000] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): load_seed_data_once> on 2024-05-10 15:01:47.476319+00:00
+[2024-05-10T15:01:48.875+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=133) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-10T15:01:48.876+0000] {standard_task_runner.py:63} INFO - Started process 135 to run task
+[2024-05-10T15:01:48.877+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', '1_init_once_seed_data', 'load_seed_data_once', 'manual__2024-05-10T15:01:47.476319+00:00', '--job-id', '84', '--raw', '--subdir', 'DAGS_FOLDER/init.py', '--cfg-path', '/tmp/tmporh6m8ji']
+[2024-05-10T15:01:48.879+0000] {standard_task_runner.py:91} INFO - Job 84: Subtask load_seed_data_once
+[2024-05-10T15:01:48.912+0000] {task_command.py:426} INFO - Running <TaskInstance: 1_init_once_seed_data.load_seed_data_once manual__2024-05-10T15:01:47.476319+00:00 [running]> on host e4fe3fcdc4ab
+[2024-05-10T15:01:48.995+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='1_init_once_seed_data' AIRFLOW_CTX_TASK_ID='load_seed_data_once' AIRFLOW_CTX_EXECUTION_DATE='2024-05-10T15:01:47.476319+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-10T15:01:47.476319+00:00'
+[2024-05-10T15:01:48.998+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-10T15:01:48.999+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-05-10T15:01:49.002+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /dbt && dbt seed --profiles-dir .']
+[2024-05-10T15:01:49.011+0000] {subprocess.py:86} INFO - Output:
+[2024-05-10T15:01:50.454+0000] {subprocess.py:93} INFO - [0m15:01:50  Running with dbt=1.7.14
+[2024-05-10T15:01:50.458+0000] {subprocess.py:93} INFO - [0m15:01:50  Encountered an error:
+[2024-05-10T15:01:50.459+0000] {subprocess.py:93} INFO - Parsing Error
+[2024-05-10T15:01:50.460+0000] {subprocess.py:93} INFO -   Env var required but not provided: 'dbt_account'
+[2024-05-10T15:01:56.779+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2024-05-10T15:01:56.780+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-10T15:01:56.787+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2024-05-10T15:01:56.789+0000] {taskinstance.py:1205} INFO - Marking task as FAILED. dag_id=1_init_once_seed_data, task_id=load_seed_data_once, execution_date=20240510T150147, start_date=20240510T150148, end_date=20240510T150156
+[2024-05-10T15:01:56.798+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 84 for task load_seed_data_once (Bash command failed. The command returned a non-zero exit code 2.; 135)
+[2024-05-10T15:01:56.818+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-05-10T15:01:56.827+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-10T15:01:56.828+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

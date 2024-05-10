@@ -1,0 +1,14 @@
+
+    
+    
+    
+    create table KEITA_NAKATA_DB.AIRFLOW_DBT.customers (id integer,first_name text,last_name text,birthdate date,membership_no integer)
+  ;
+    -- dbt seed --
+    
+            insert into KEITA_NAKATA_DB.AIRFLOW_DBT.customers (id, first_name, last_name, birthdate, membership_no) values
+            (%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s)
+        
+
+;
+  

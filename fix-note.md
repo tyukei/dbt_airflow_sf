@@ -89,3 +89,52 @@ https://quickstarts.snowflake.com/guide/data_engineering_with_apache_airflow_ja/
 ```
 _PIP_ADDITIONAL_REQUIREMENTS=dbt-snowflake==1.7.3
 ```
+
+
+## No dbt_project.yml found 
+
+airflowのタグを実行すると以下のエラーが出る
+```
+No dbt_project.yml found at expected path /dbt/dbt_project.yml
+```
+
+fix: docker-compose.ymlファイルを変更する
+```
+    - ${AIRFLOW_PROJ_DIR:-.}/dbt:/dbt # add this in
+    - ${AIRFLOW_PROJ_DIR:-.}/dags:/dags # add this in
+```
+
+# Required version of dbt for 'dbt_utils'
+
+```
+[2024-05-10, 15:22:21 UTC] {subprocess.py:93} INFO - 15:22:21  Running with dbt=1.7.14
+[2024-05-10, 15:22:22 UTC] {subprocess.py:93} INFO - 15:22:22  Registered adapter: snowflake=1.7.3
+[2024-05-10, 15:22:22 UTC] {subprocess.py:93} INFO - 15:22:22  Encountered an error:
+[2024-05-10, 15:22:22 UTC] {subprocess.py:93} INFO - Runtime Error
+[2024-05-10, 15:22:22 UTC] {subprocess.py:93} INFO -   Failed to read package: Runtime Error
+[2024-05-10, 15:22:22 UTC] {subprocess.py:93} INFO -     This version of dbt is not supported with the 'dbt_utils' package.
+[2024-05-10, 15:22:22 UTC] {subprocess.py:93} INFO -       Installed version of dbt: =1.7.14
+[2024-05-10, 15:22:22 UTC] {subprocess.py:93} INFO -       Required version of dbt for 'dbt_utils': ['>=0.18.0', '<0.20.0']
+[2024-05-10, 15:22:22 UTC] {subprocess.py:93} INFO -     Check for a different version of the 'dbt_utils' package, or run dbt again with --no-version-check
+[2024-05-10, 15:22:22 UTC] {subprocess.py:93} INFO - 
+```
+
+fix: pip installを以下のように変更する
+```
+pip install dbt-core==1.7.3
+pip install dbt-snowflake==1.7.3
+rm -rf dbt/dbt_packages
+vi packages.yml
+```
+
+packages.ymlを以下のように変更する.
+
+fishtown-analytics/dbt_utilsはversion1.1.1に合うものがないので、dbt-labs/dbt_utilsに変更する
+
+```packages.yml
+packages:
+  - package: dbt-labs/dbt_utils
+    version: 1.1.1
+```
+
+

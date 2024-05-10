@@ -21,6 +21,10 @@ with DAG('1_init_once_seed_data', default_args=default_args, schedule_interval='
         env={
             'dbt_user': '{{ var.value.dbt_user }}',
             'dbt_password': '{{ var.value.dbt_password }}',
+            'dbt_account':'{{ var.value.dbt_account }}',
+            'dbt_database':'{{ var.value.dbt_database }}',
+            'dbt_warehouse':'{{ var.value.dbt_warehouse }}',
+            'dbt_schema':'{{ var.value.dbt_schema }}',
             **os.environ
         },
         dag=dag

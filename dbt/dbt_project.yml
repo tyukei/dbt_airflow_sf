@@ -1,0 +1,12 @@
+name: exam1
+profile: default
+models:
+  my_new_project:
+      # Applies to all files under models/example/
+      transform:
+          schema: transform
+          materialized: view
+      analysis:
+          schema: analysis
+          materialized: view
+seed-paths: ["data"]   
