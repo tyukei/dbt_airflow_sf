@@ -1,9 +1,10 @@
 
 
-https://quickstarts.snowflake.com/guide/data_engineering_with_apache_airflow_ja/index.html?index=..%2F..index#2
-
 
 ## Required "name" field not present in project
+
+https://quickstarts.snowflake.com/guide/data_engineering_with_apache_airflow_ja/index.html?index=..%2F..index#2
+
 
 > 最後のステップは、db_utilsのdbtモジュールをインストールすることです。dbtディレクトリから次を実行します。
 > dbt deps
@@ -36,6 +37,9 @@ seed-paths: ["data"]
 
 ## macrosフォルダの下
 
+https://quickstarts.snowflake.com/guide/data_engineering_with_apache_airflow_ja/index.html?index=..%2F..index#2
+
+
 > ここで、macrosフォルダの下にcustom_demo_macros.sqlというファイルを作成し
 
 > 関連するモジュールがdbt_modulesフォルダにインストールされていることがわかります。
@@ -50,7 +54,36 @@ fix: `custom_demo_macros.sql`に変更
 ![](pic/2024-05-08-09-41-11.png)
 
 
+
+# airflowの起動時エラー
+
+https://quickstarts.snowflake.com/guide/data_engineering_with_apache_airflow_ja/index.html?index=..%2F..index#5
+
+airflowの起動時エラーが出る
+```
+Broken DAG: [/opt/airflow/dags/transform_and_analysis.py]
+Traceback (most recent call last):
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_and_analysis.py", line 21, in <module>
+    **os.environ
+      ^^
+NameError: name 'os' is not defined. Did you forget to import 'os'
+```
+
+fix: `transform_and_analysis.py`に`import os`を追加し、リロードする
+```python
+from airflow import DAG
+from airflow.operators.python import PythonOperator, BranchPythonOperator
+from airflow.operators.bash import BashOperator
+from airflow.operators.dummy_operator import DummyOperator
+from datetime import datetime
+import os
+```
+
+
 ## airflowが起動しない
+
+https://quickstarts.snowflake.com/guide/data_engineering_with_apache_airflow_ja/index.html?index=..%2F..index#6 
 
 .envファイルを以下のようにする
 ```
