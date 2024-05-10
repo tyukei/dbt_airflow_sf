@@ -20,8 +20,13 @@ docker-compose.yamlファイルを開き、以下の行を追加します。
 
 .envファイルを作成し、以下の行を追加します。
 ```
-echo "_PIP_ADDITIONAL_REQUIREMENTS=dbt==0.19.0" >> .env
-echo ".env" >> .gitignore
+_PIP_ADDITIONAL_REQUIREMENTS=dbt-snowflake==1.7.3
+dbt_account=xxxxx
+dbt_user=xxxxx
+dbt_password=xxxxx
+dbt_database=xxxx_DB
+dbt_warehouse=xxxxx_WH
+dbt_schema=AIRFLOW_DBT
 ```
 
 ```
@@ -396,3 +401,27 @@ with DAG('2_daily_transformation_analysis', default_args=default_args, schedule_
     task_1 >> task_2 # Define dependencies
 
 ```
+
+# Airflowのdocker-composeファイルの実行
+
+docker desktopを起動し、以下のコマンドを実行します。
+```
+cd ../
+docker-compose up
+```
+
+もし次のエラーが出た時`Bind for 0.0.0.0:8080 failed: port is already allocated`
+次のコマンドを実行して、ポートを解放します。
+```
+docker container ls
+docker rm -f <container-name>
+```
+
+`docker-compose up`実行後、以下のURLにアクセスします。
+http://localhost:8080/
+
+うまくいけば、以下の画面が表示されます。
+
+
+
+![](pic/2024-05-10-19-51-12.png)

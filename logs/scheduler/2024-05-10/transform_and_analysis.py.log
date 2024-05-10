@@ -1,0 +1,126 @@
+[2024-05-10T10:49:21.142+0000] {processor.py:161} INFO - Started process (PID=142) to work on /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:49:21.143+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_and_analysis.py for tasks to queue
+[2024-05-10T10:49:21.149+0000] {logging_mixin.py:188} INFO - [2024-05-10T10:49:21.149+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:49:21.156+0000] {logging_mixin.py:188} INFO - [2024-05-10T10:49:21.155+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/transform_and_analysis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_and_analysis.py", line 1, in <module>
+    from airflow import DAiG
+ImportError: cannot import name 'DAiG' from 'airflow' (/home/airflow/.local/lib/python3.12/site-packages/airflow/__init__.py). Did you mean: 'DAG'?
+[2024-05-10T10:49:21.157+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:49:21.171+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_and_analysis.py took 0.035 seconds
+[2024-05-10T10:49:51.513+0000] {processor.py:161} INFO - Started process (PID=202) to work on /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:49:51.518+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_and_analysis.py for tasks to queue
+[2024-05-10T10:49:51.522+0000] {logging_mixin.py:188} INFO - [2024-05-10T10:49:51.521+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:49:51.531+0000] {logging_mixin.py:188} INFO - [2024-05-10T10:49:51.527+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/transform_and_analysis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_and_analysis.py", line 1, in <module>
+    from airflow import DAiG
+ImportError: cannot import name 'DAiG' from 'airflow' (/home/airflow/.local/lib/python3.12/site-packages/airflow/__init__.py). Did you mean: 'DAG'?
+[2024-05-10T10:49:51.532+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:49:51.552+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_and_analysis.py took 0.050 seconds
+[2024-05-10T10:50:22.119+0000] {processor.py:161} INFO - Started process (PID=262) to work on /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:50:22.120+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_and_analysis.py for tasks to queue
+[2024-05-10T10:50:22.124+0000] {logging_mixin.py:188} INFO - [2024-05-10T10:50:22.124+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:50:22.132+0000] {logging_mixin.py:188} INFO - [2024-05-10T10:50:22.131+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/transform_and_analysis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_and_analysis.py", line 1, in <module>
+    from airflow import DAiG
+ImportError: cannot import name 'DAiG' from 'airflow' (/home/airflow/.local/lib/python3.12/site-packages/airflow/__init__.py). Did you mean: 'DAG'?
+[2024-05-10T10:50:22.134+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:50:22.153+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_and_analysis.py took 0.041 seconds
+[2024-05-10T10:50:52.740+0000] {processor.py:161} INFO - Started process (PID=321) to work on /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:50:52.741+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_and_analysis.py for tasks to queue
+[2024-05-10T10:50:52.743+0000] {logging_mixin.py:188} INFO - [2024-05-10T10:50:52.743+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:50:52.750+0000] {logging_mixin.py:188} INFO - [2024-05-10T10:50:52.749+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/transform_and_analysis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_and_analysis.py", line 1, in <module>
+    from airflow import DAiG
+ImportError: cannot import name 'DAiG' from 'airflow' (/home/airflow/.local/lib/python3.12/site-packages/airflow/__init__.py). Did you mean: 'DAG'?
+[2024-05-10T10:50:52.751+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:50:52.768+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_and_analysis.py took 0.038 seconds
+[2024-05-10T10:51:23.330+0000] {processor.py:161} INFO - Started process (PID=381) to work on /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:51:23.332+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_and_analysis.py for tasks to queue
+[2024-05-10T10:51:23.334+0000] {logging_mixin.py:188} INFO - [2024-05-10T10:51:23.334+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:51:23.340+0000] {logging_mixin.py:188} INFO - [2024-05-10T10:51:23.339+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/transform_and_analysis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_and_analysis.py", line 1, in <module>
+    from airflow import DAiG
+ImportError: cannot import name 'DAiG' from 'airflow' (/home/airflow/.local/lib/python3.12/site-packages/airflow/__init__.py). Did you mean: 'DAG'?
+[2024-05-10T10:51:23.341+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:51:23.359+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_and_analysis.py took 0.038 seconds
+[2024-05-10T10:51:53.893+0000] {processor.py:161} INFO - Started process (PID=441) to work on /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:51:53.894+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_and_analysis.py for tasks to queue
+[2024-05-10T10:51:53.896+0000] {logging_mixin.py:188} INFO - [2024-05-10T10:51:53.896+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:51:53.903+0000] {logging_mixin.py:188} INFO - [2024-05-10T10:51:53.901+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/transform_and_analysis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_and_analysis.py", line 1, in <module>
+    from airflow import DAiG
+ImportError: cannot import name 'DAiG' from 'airflow' (/home/airflow/.local/lib/python3.12/site-packages/airflow/__init__.py). Did you mean: 'DAG'?
+[2024-05-10T10:51:53.904+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:51:53.920+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_and_analysis.py took 0.034 seconds
+[2024-05-10T10:52:24.490+0000] {processor.py:161} INFO - Started process (PID=501) to work on /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:52:24.491+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_and_analysis.py for tasks to queue
+[2024-05-10T10:52:24.493+0000] {logging_mixin.py:188} INFO - [2024-05-10T10:52:24.493+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:52:24.501+0000] {logging_mixin.py:188} INFO - [2024-05-10T10:52:24.499+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/transform_and_analysis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_and_analysis.py", line 1, in <module>
+    from airflow import DAiG
+ImportError: cannot import name 'DAiG' from 'airflow' (/home/airflow/.local/lib/python3.12/site-packages/airflow/__init__.py). Did you mean: 'DAG'?
+[2024-05-10T10:52:24.502+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:52:24.517+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_and_analysis.py took 0.035 seconds
+[2024-05-10T10:52:55.036+0000] {processor.py:161} INFO - Started process (PID=561) to work on /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:52:55.036+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_and_analysis.py for tasks to queue
+[2024-05-10T10:52:55.038+0000] {logging_mixin.py:188} INFO - [2024-05-10T10:52:55.038+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:52:55.043+0000] {logging_mixin.py:188} INFO - [2024-05-10T10:52:55.042+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/transform_and_analysis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_and_analysis.py", line 1, in <module>
+    from airflow import DAiG
+ImportError: cannot import name 'DAiG' from 'airflow' (/home/airflow/.local/lib/python3.12/site-packages/airflow/__init__.py). Did you mean: 'DAG'?
+[2024-05-10T10:52:55.044+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:52:55.055+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_and_analysis.py took 0.024 seconds
+[2024-05-10T10:53:25.593+0000] {processor.py:161} INFO - Started process (PID=620) to work on /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:53:25.595+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_and_analysis.py for tasks to queue
+[2024-05-10T10:53:25.597+0000] {logging_mixin.py:188} INFO - [2024-05-10T10:53:25.596+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:53:25.603+0000] {logging_mixin.py:188} INFO - [2024-05-10T10:53:25.601+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/transform_and_analysis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_and_analysis.py", line 1, in <module>
+    from airflow import DAiG
+ImportError: cannot import name 'DAiG' from 'airflow' (/home/airflow/.local/lib/python3.12/site-packages/airflow/__init__.py). Did you mean: 'DAG'?
+[2024-05-10T10:53:25.604+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_and_analysis.py
+[2024-05-10T10:53:25.620+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_and_analysis.py took 0.035 seconds

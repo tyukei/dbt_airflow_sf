@@ -3,6 +3,8 @@
 https://quickstarts.snowflake.com/guide/data_engineering_with_apache_airflow_ja/index.html?index=..%2F..index#2
 
 
+## Required "name" field not present in project
+
 > 最後のステップは、db_utilsのdbtモジュールをインストールすることです。dbtディレクトリから次を実行します。
 > dbt deps
 
@@ -32,6 +34,7 @@ models:
 seed-paths: ["data"]   
 ```
 
+## macrosフォルダの下
 
 > ここで、macrosフォルダの下にcustom_demo_macros.sqlというファイルを作成し
 
@@ -45,3 +48,11 @@ note: `custom_demo_macros.sql`か`macro.sql`のどちらのファイル名にす
 fix: `custom_demo_macros.sql`に変更
 画像修正
 ![](pic/2024-05-08-09-41-11.png)
+
+
+## airflowが起動しない
+
+.envファイルを以下のようにする
+```
+_PIP_ADDITIONAL_REQUIREMENTS=dbt-snowflake==1.7.3
+```
