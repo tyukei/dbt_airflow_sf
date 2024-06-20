@@ -102,7 +102,7 @@ fix: docker-compose.ymlファイルを変更する
     - ${AIRFLOW_PROJ_DIR:-.}/dags:/dags # add this in
 ```
 
-# Required version of dbt for 'dbt_utils'
+## Required version of dbt for 'dbt_utils'
 
 ```
 [2024-05-10, 15:22:21 UTC] {subprocess.py:93} INFO - 15:22:21  Running with dbt=1.7.14
