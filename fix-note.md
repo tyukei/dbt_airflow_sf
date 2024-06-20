@@ -1,6 +1,3 @@
-
-
-
 ## Required "name" field not present in project
 
 https://quickstarts.snowflake.com/guide/data_engineering_with_apache_airflow_ja/index.html?index=..%2F..index#2
@@ -51,6 +48,7 @@ note: `custom_demo_macros.sql`か`macro.sql`のどちらのファイル名にす
 
 fix: `custom_demo_macros.sql`に変更
 画像修正
+
 ![](pic/2024-05-08-09-41-11.png)
 
 
